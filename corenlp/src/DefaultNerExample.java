@@ -33,7 +33,30 @@ public class DefaultNerExample {
 	    
 	    // the model ner mandatorily bundled with some other models
 	    props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner");
+	    props.setProperty("ner.applyFineGrained", "false");
+	    //props.setProperty("ner.combinationMode", "HIGH_RECALL");
 	    //props.setProperty("coref.algorithm", "neural");
+	    
+	    // customize fine grained ner
+	    // props.setProperty("ner.fine.regexner.mapping", "example.rules");
+	    // props.setProperty("ner.fine.regexner.ignorecase", "true");
+
+	    // add additional rules, customize TokensRegexNER annotator
+	    // props.setProperty("ner.additional.regexner.mapping", "example.rules");
+	    // props.setProperty("ner.additional.regexner.ignorecase", "true");
+
+	    // add 2 additional rules files ; set the first one to be case-insensitive
+	    // props.setProperty("ner.additional.regexner.mapping", "ignorecase=true,example_one.rules;example_two.rules");
+
+	    // set document date to be a specific date (other options are explained in the document date section)
+	    // props.setProperty("ner.docdate.useFixedDate", "2019-01-01");
+
+	    // only run rules based NER
+	    // props.setProperty("ner.rulesOnly", "true");
+
+	    // only run statistical NER
+	    // props.setProperty("ner.statisticalOnly", "true");
+
 	    
 	    // build file path
 	    final ClassLoader loader =DefaultNerExample.class.getClassLoader();

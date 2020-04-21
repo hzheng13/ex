@@ -1,0 +1,198 @@
+-----
+coref chains
+	CHAIN129-["funds" in sentence 21, "the funds" in sentence 22]
+	CHAIN114-["client" in sentence 20, "his" in sentence 20]
+	CHAIN19-["HBCA" in sentence 3, "HBCA" in sentence 5]
+	CHAIN6-["This report" in sentence 1, "This report" in sentence 2]
+	CHAIN54-["China" in sentence 11, "China" in sentence 12]
+	CHAIN119-["multiple cash withdrawals" in sentence 5, "the cash withdrawals" in sentence 21]
+	CHAIN24-["Jong CHEN" in sentence 3, "HBCA client Jong CHEN" in sentence 5, "Jong CHEN" in sentence 9, "Jong CHEN" in sentence 10]
+	CHAIN75-["Canada" in sentence 12, "Canada" in sentence 14]
+	CHAIN108-["observed activity" in sentence 7, "the activity" in sentence 8, "the activity" in sentence 19]
+	CHAIN126-["the wires" in sentence 22, "they" in sentence 22]
+---
+mentions
+	123456789
+	This report
+	to FINTRAC report number
+---
+mentions
+	10001
+	the transactions
+	Branch 10001
+	This report
+---
+mentions
+	HBCA
+	Jong CHEN
+	the accounts of Jong CHEN
+	HBCA case C76768686567
+---
+mentions
+	Previous reviews of the clients
+	the clients
+	STR-R166788765 -LRB- 21Dec2016 -RRB- , STR-R999988876 -LRB- 21Dec2016 -RRB- , STR-R877656789 -LRB- 09Dec2018 -RRB- , being filed
+	21Dec2016
+	STR-R999988876 -LRB- 21Dec2016 -RRB-
+	21Dec2016
+	STR-R877656789 -LRB- 09Dec2018 -RRB-
+	09Dec2018
+---
+mentions
+	HBCA
+	third
+	a third party individual that was used to facilitate multiple cash withdrawals
+	multiple cash withdrawals
+	Investigation of HBCA client Jong CHEN
+	HBCA client Jong CHEN
+	a wire transfer
+---
+mentions
+	previously
+	A continuation of previously reported activity
+	previously reported activity
+---
+mentions
+	the wire
+	conflicts with observed activity
+	observed activity
+	Memo on the wire also
+---
+mentions
+	money laundering
+	reasonable grounds to suspect the activity as being a money laundering offence
+	the activity
+	a money laundering offence
+---
+mentions
+	Jong CHEN
+	100-123456
+	According to HBCA records
+	Customer
+	a HBCA customer since 14Jul2009
+	14Jul2009
+---
+mentions
+	Jong CHEN
+	John
+	28 years old
+	Preferred name
+	DOB
+	24Jan1992
+	Male
+---
+mentions
+	China
+	Client
+	Canadian/Foreign Passport , #E88643226 issued in China
+	#E88643226 issued in China
+---
+mentions
+	China
+	Canada
+	Clients
+	notes country of citizenship and country of birth
+	citizenship
+	country
+	birth
+	country of residence
+	residence
+	country of origin information
+	origin information
+---
+mentions
+	133
+	ST Toronto ON M0G7V8
+	file
+	Home Address
+	133 YOUNGE
+	ST Toronto ON M0G7V8 , Canada
+	M0G7V8 , Canada
+	The associated addresses on file
+---
+mentions
+	18
+	ON
+	Canada
+	COURT Barrie ON L7F4L1
+	Previous Address : 18 STRANDHURST COURT Barrie ON L7F4L1 , Canada
+	18 STRANDHURST
+---
+mentions
+	Student
+	Client 's
+	Client 's employment status
+	student with an occupation of Student
+	an occupation of Student
+---
+mentions
+	No
+	No income information
+	record
+---
+mentions
+	No
+	No previous employment details
+---
+mentions
+	# 111-111111-123
+	30,200.00
+	two
+	third
+	Jackie CHEN
+	45,300.00
+	two incoming wire transfers from a third party individual
+	a third party individual
+	total of CAD 45,300.00
+	CAD 45,300.00
+	Investigation of account
+	account
+	multiple cash withdrawals -LRB- total of CAD 30,200.00 -RRB- that were mainly funded by two incoming wire transfers from a third party individual ; Jackie CHEN
+	total of CAD 30,200.00
+	CAD 30,200.00
+---
+mentions
+	it
+	the remitter
+	familial ties
+	to the client
+	the activity
+	a continuation of previous reported activity
+	previous reported activity
+---
+mentions
+	According to previous correspondence
+	client
+	he?s
+	his
+	his parents for overseas study
+	overseas study
+---
+mentions
+	source of funds
+	funds
+	the cash withdrawals
+	separate occasions at different branch locations ; indicative of flow through
+	different branch locations
+	flow
+---
+mentions
+	this may
+	Memo on the wires
+	the wires
+	they
+	tuition purposes , however
+	observed activity
+	the funds
+	cash
+---
+mentions
+	Ultimate destination of funds
+	funds
+---
+mentions
+	reasonable grounds to suspect the activity above as being potential commission of a money laundering related offence
+	the activity above as being potential commission of a money laundering related offence
+	potential commission of a money laundering
+	a money laundering
+	as being potential commission of a money laundering related offence

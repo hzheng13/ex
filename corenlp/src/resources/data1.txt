@@ -1,0 +1,9 @@
+Introduction:
+Internal Case #C92646759
+FinTRAC Reference Number: 348729667
+On 1/12/2017 Capital One Bank USA, NA (COBUSANA) detected patterns of activity on credit card account number 1234567890123456 that is indicative of Credit Card. Capital One has identified an unknown suspect in this case based on the external fraud investigation team. This activity is considered suspicious in nature. From 3/15/2016 to 5/14/2016 suspicious activity occurred totaling $8,098.76.
+Transactional Details:
+Suspicious transactions posted to the account $8,098.76. The suspicious activity was conducted in Canada with Walmart, restaurants, Target, Quality Inn, Best Buy and other brick and mortar merchants.
+Conclusion:  
+Account number 1234567890123456 is closed. A police report has not been filed. Capital One has been unable to recover the total fraud loss. Capital One is therefore reporting a loss of $8,098.76. Supporting documentation may be requested either by phone or by email to ThisIsFake@CapitalOne.com. All supporting documentation is maintained by Capital One Bank (USA) N.A.
+Included in Section B of this report is a sampling of transactional activity totaling $30.03. The sample is drawn from transaction activity occurring from 5/12/2016  to 5/14/2016. The sample includes one (1) fraudulent charge.

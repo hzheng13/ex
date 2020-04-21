@@ -1,0 +1,2233 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sentence #1: Hi,
+I am Min TZING, Managing Director of Flamenco Realty.
+root(ROOT-0, Hi-1)
+punct(TZING-6, ,-2)
+nsubj(TZING-6, I-3)
+cop(TZING-6, am-4)
+compound(TZING-6, Min-5)
+dep(Hi-1, TZING-6)
+punct(TZING-6, ,-7)
+amod(Director-9, Managing-8)
+appos(TZING-6, Director-9)
+case(Realty-12, of-10)
+compound(Realty-12, Flamenco-11)
+nmod:of(Director-9, Realty-12)
+punct(Hi-1, .-13)
+
+------
+triple
+0.5433080102573584	I	Managing Director of	Flamenco Realty
+------
+triple
+0.5433080102573584	I	Director of	Flamenco Realty
+------
+triple
+0.5809246517262114	I	am	Min TZING
+------
+triple
+1.0	Min TZING	Director of	Flamenco Realty
+root(ROOT-0, Hi-1)
+nsubj(TZING-6, I-3)
+cop(TZING-6, am-4)
+compound(TZING-6, Min-5)
+dep(Hi-1, TZING-6)
+amod(Director-9, Managing-8)
+appos(TZING-6, Director-9)
+case(Realty-12, of-10)
+compound(Realty-12, Flamenco-11)
+nmod:of(Director-9, Realty-12)
+
+root(ROOT-0, TZING-6)
+nsubj(TZING-6, I-3)
+cop(TZING-6, am-4)
+compound(TZING-6, Min-5)
+amod(Director-9, Managing-8)
+appos(TZING-6, Director-9)
+case(Realty-12, of-10)
+compound(Realty-12, Flamenco-11)
+nmod:of(Director-9, Realty-12)
+
+root(ROOT-0, Director-9)
+nsubj(Director-9, I-3)
+amod(Director-9, Managing-8)
+case(Realty-12, of-10)
+compound(Realty-12, Flamenco-11)
+nmod:of(Director-9, Realty-12)
+
+
+Sentence #2: I am writing to report a deal which has aroused my suspicion.
+root(ROOT-0, writing-3)
+nsubj(writing-3, I-1)
+nsubj:xsubj(report-5, I-1)
+aux(writing-3, am-2)
+mark(report-5, to-4)
+xcomp(writing-3, report-5)
+det(deal-7, a-6)
+dobj(report-5, deal-7)
+nsubj(aroused-10, deal-7)
+ref(deal-7, which-8)
+aux(aroused-10, has-9)
+acl:relcl(deal-7, aroused-10)
+nmod:poss(suspicion-12, my-11)
+dobj(aroused-10, suspicion-12)
+punct(writing-3, .-13)
+
+------
+triple
+1.0	I	report	deal
+root(ROOT-0, writing-3)
+nsubj(writing-3, I-1)
+aux(writing-3, am-2)
+mark(report-5, to-4)
+xcomp(writing-3, report-5)
+det(deal-7, a-6)
+dobj(report-5, deal-7)
+ref(deal-7, which-8)
+aux(aroused-10, has-9)
+acl:relcl(deal-7, aroused-10)
+nmod:poss(suspicion-12, my-11)
+dobj(aroused-10, suspicion-12)
+
+root(ROOT-0, report-5)
+nsubj(report-5, I-1)
+det(deal-7, a-6)
+dobj(report-5, deal-7)
+ref(deal-7, which-8)
+aux(aroused-10, has-9)
+acl:relcl(deal-7, aroused-10)
+nmod:poss(suspicion-12, my-11)
+dobj(aroused-10, suspicion-12)
+
+root(ROOT-0, aroused-10)
+det(deal-7, a-6)
+nsubj(aroused-10, deal-7)
+ref(deal-7, which-8)
+aux(aroused-10, has-9)
+nmod:poss(suspicion-12, my-11)
+dobj(aroused-10, suspicion-12)
+
+
+Sentence #3: On 13 Dec 2012 (2:00 pm), my realtor (Sammy Sung) informed me by text messages that he was preparing an offer (property address: 3330 Southbend Road, West Vancouver  C2V 9K7).
+root(ROOT-0, informed-16)
+case(Dec-3, On-1)
+nummod(Dec-3, 13-2)
+nmod:on(informed-16, Dec-3)
+nummod(Dec-3, 2012-4)
+punct(pm-7, -LRB--5)
+nummod(pm-7, 2:00-6)
+appos(Dec-3, pm-7)
+punct(pm-7, -RRB--8)
+punct(informed-16, ,-9)
+nmod:poss(realtor-11, my-10)
+nsubj(informed-16, realtor-11)
+punct(Sung-14, -LRB--12)
+compound(Sung-14, Sammy-13)
+appos(realtor-11, Sung-14)
+punct(Sung-14, -RRB--15)
+dobj(informed-16, me-17)
+case(messages-20, by-18)
+compound(messages-20, text-19)
+nmod:by(informed-16, messages-20)
+mark(preparing-24, that-21)
+nsubj(preparing-24, he-22)
+aux(preparing-24, was-23)
+ccomp(informed-16, preparing-24)
+det(offer-26, an-25)
+dobj(preparing-24, offer-26)
+punct(address-29, -LRB--27)
+compound(address-29, property-28)
+appos(offer-26, address-29)
+punct(address-29, :-30)
+nummod(Road-33, 3330-31)
+compound(Road-33, Southbend-32)
+dep(address-29, Road-33)
+punct(Road-33, ,-34)
+compound(9K7-38, West-35)
+compound(9K7-38, Vancouver-36)
+compound(9K7-38, C2V-37)
+appos(Road-33, 9K7-38)
+punct(address-29, -RRB--39)
+punct(informed-16, .-40)
+
+------
+triple
+1.0	he	preparing	property address
+------
+triple
+1.0	my	realtor	Sammy Sung
+------
+triple
+1.0	he	preparing	offer
+------
+triple
+1.0	my realtor	informed	me
+root(ROOT-0, informed-16)
+case(Dec-3, On-1)
+nummod(Dec-3, 13-2)
+nmod:on(informed-16, Dec-3)
+nummod(Dec-3, 2012-4)
+nummod(pm-7, 2:00-6)
+appos(Dec-3, pm-7)
+nmod:poss(realtor-11, my-10)
+nsubj(informed-16, realtor-11)
+compound(Sung-14, Sammy-13)
+appos(realtor-11, Sung-14)
+dobj(informed-16, me-17)
+case(messages-20, by-18)
+compound(messages-20, text-19)
+nmod:by(informed-16, messages-20)
+mark(preparing-24, that-21)
+nsubj(preparing-24, he-22)
+aux(preparing-24, was-23)
+ccomp(informed-16, preparing-24)
+det(offer-26, an-25)
+dobj(preparing-24, offer-26)
+compound(address-29, property-28)
+appos(offer-26, address-29)
+nummod(Road-33, 3330-31)
+compound(Road-33, Southbend-32)
+dep(address-29, Road-33)
+compound(9K7-38, West-35)
+compound(9K7-38, Vancouver-36)
+compound(9K7-38, C2V-37)
+appos(Road-33, 9K7-38)
+
+root(ROOT-0, preparing-24)
+nsubj(preparing-24, he-22)
+det(offer-26, an-25)
+dobj(preparing-24, offer-26)
+compound(address-29, property-28)
+appos(offer-26, address-29)
+nummod(Road-33, 3330-31)
+compound(Road-33, Southbend-32)
+dep(address-29, Road-33)
+compound(9K7-38, West-35)
+compound(9K7-38, Vancouver-36)
+compound(9K7-38, C2V-37)
+appos(Road-33, 9K7-38)
+
+
+Sentence #4: He asked if it was legal when both the buyer and seller agreed to accept two million Canadian dollars as deposit and the deposit would be released to the seller directly on 13 Mar 2019 as agreed by both parties.
+root(ROOT-0, asked-2)
+nsubj(asked-2, He-1)
+mark(legal-6, if-3)
+nsubj(legal-6, it-4)
+cop(legal-6, was-5)
+advcl:if(released-27, legal-6)
+advmod(agreed-13, when-7)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj(agreed-13, buyer-10)
+nsubj:xsubj(accept-15, buyer-10)
+cc(buyer-10, and-11)
+conj:and(buyer-10, seller-12)
+nsubj(agreed-13, seller-12)
+nsubj:xsubj(accept-15, seller-12)
+advcl(legal-6, agreed-13)
+mark(accept-15, to-14)
+xcomp(agreed-13, accept-15)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+nmod:as(accept-15, deposit-24)
+conj:and(deposit-21, deposit-24)
+aux(released-27, would-25)
+auxpass(released-27, be-26)
+ccomp(asked-2, released-27)
+case(seller-30, to-28)
+det(seller-30, the-29)
+nmod:to(released-27, seller-30)
+advmod(released-27, directly-31)
+case(Mar-34, on-32)
+nummod(Mar-34, 13-33)
+nmod:on(released-27, Mar-34)
+nummod(Mar-34, 2019-35)
+mark(agreed-37, as-36)
+advcl:as(released-27, agreed-37)
+case(parties-40, by-38)
+det(parties-40, both-39)
+nmod:by(agreed-37, parties-40)
+punct(asked-2, .-41)
+
+------
+triple
+1.0	it	was	legal
+------
+triple
+1.0	seller	accept	two million Canadian dollars
+------
+triple
+1.0	seller	accept	two million dollars
+root(ROOT-0, asked-2)
+nsubj(asked-2, He-1)
+mark(legal-6, if-3)
+nsubj(legal-6, it-4)
+cop(legal-6, was-5)
+advcl:if(released-27, legal-6)
+advmod(agreed-13, when-7)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj(agreed-13, buyer-10)
+cc(buyer-10, and-11)
+nsubj(agreed-13, seller-12)
+advcl(legal-6, agreed-13)
+mark(accept-15, to-14)
+xcomp(agreed-13, accept-15)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+conj:and(deposit-21, deposit-24)
+aux(released-27, would-25)
+auxpass(released-27, be-26)
+ccomp(asked-2, released-27)
+case(seller-30, to-28)
+det(seller-30, the-29)
+nmod:to(released-27, seller-30)
+advmod(released-27, directly-31)
+case(Mar-34, on-32)
+nummod(Mar-34, 13-33)
+nmod:on(released-27, Mar-34)
+nummod(Mar-34, 2019-35)
+mark(agreed-37, as-36)
+advcl:as(released-27, agreed-37)
+case(parties-40, by-38)
+det(parties-40, both-39)
+nmod:by(agreed-37, parties-40)
+
+root(ROOT-0, released-27)
+mark(legal-6, if-3)
+nsubj(legal-6, it-4)
+cop(legal-6, was-5)
+advcl:if(released-27, legal-6)
+advmod(agreed-13, when-7)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj(agreed-13, buyer-10)
+cc(buyer-10, and-11)
+nsubj(agreed-13, seller-12)
+advcl(legal-6, agreed-13)
+mark(accept-15, to-14)
+xcomp(agreed-13, accept-15)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+conj:and(deposit-21, deposit-24)
+auxpass(released-27, be-26)
+case(seller-30, to-28)
+det(seller-30, the-29)
+nmod:to(released-27, seller-30)
+advmod(released-27, directly-31)
+case(Mar-34, on-32)
+nummod(Mar-34, 13-33)
+nmod:on(released-27, Mar-34)
+nummod(Mar-34, 2019-35)
+mark(agreed-37, as-36)
+advcl:as(released-27, agreed-37)
+case(parties-40, by-38)
+det(parties-40, both-39)
+nmod:by(agreed-37, parties-40)
+
+root(ROOT-0, agreed-37)
+mark(agreed-37, as-36)
+case(parties-40, by-38)
+det(parties-40, both-39)
+nmod:by(agreed-37, parties-40)
+
+root(ROOT-0, legal-6)
+mark(legal-6, if-3)
+nsubj(legal-6, it-4)
+cop(legal-6, was-5)
+advmod(agreed-13, when-7)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj(agreed-13, buyer-10)
+cc(buyer-10, and-11)
+nsubj(agreed-13, seller-12)
+advcl(legal-6, agreed-13)
+mark(accept-15, to-14)
+xcomp(agreed-13, accept-15)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+conj:and(deposit-21, deposit-24)
+
+root(ROOT-0, agreed-13)
+advmod(agreed-13, when-7)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj(agreed-13, buyer-10)
+cc(buyer-10, and-11)
+nsubj(agreed-13, seller-12)
+mark(accept-15, to-14)
+xcomp(agreed-13, accept-15)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+conj:and(deposit-21, deposit-24)
+
+root(ROOT-0, accept-15)
+cc:preconj(buyer-10, both-8)
+det(buyer-10, the-9)
+nsubj:xsubj(accept-15, buyer-10)
+cc(buyer-10, and-11)
+nsubj(accept-15, seller-12)
+compound(million-17, two-16)
+nummod(dollars-19, million-17)
+amod(dollars-19, Canadian-18)
+dobj(accept-15, dollars-19)
+case(deposit-21, as-20)
+nmod:as(accept-15, deposit-21)
+cc(deposit-21, and-22)
+det(deposit-24, the-23)
+conj:and(deposit-21, deposit-24)
+
+root(ROOT-0, deposit-24)
+det(deposit-24, the-23)
+
+
+Sentence #5: I replied that both parties should find their own legal representatives and deposit could be submitted to the buyer's lawyer or our Brokerage.
+root(ROOT-0, replied-2)
+nsubj(replied-2, I-1)
+mark(find-7, that-3)
+det(parties-5, both-4)
+nsubj(find-7, parties-5)
+aux(find-7, should-6)
+ccomp(replied-2, find-7)
+nmod:poss(representatives-11, their-8)
+amod(representatives-11, own-9)
+amod(representatives-11, legal-10)
+nsubjpass(submitted-16, representatives-11)
+cc(representatives-11, and-12)
+conj:and(representatives-11, deposit-13)
+nsubjpass(submitted-16, deposit-13)
+aux(submitted-16, could-14)
+auxpass(submitted-16, be-15)
+ccomp(find-7, submitted-16)
+case(lawyer-21, to-17)
+det(buyer-19, the-18)
+nmod:poss(lawyer-21, buyer-19)
+case(buyer-19, 's-20)
+nmod:to(submitted-16, lawyer-21)
+cc(lawyer-21, or-22)
+nmod:poss(Brokerage-24, our-23)
+nmod:to(submitted-16, Brokerage-24)
+conj:or(lawyer-21, Brokerage-24)
+punct(replied-2, .-25)
+
+------
+triple
+1.0	deposit	be	submitted to buyer 's lawyer
+------
+triple
+1.0	buyer	to	lawyer
+------
+triple
+1.0	deposit	be	submitted
+root(ROOT-0, replied-2)
+nsubj(replied-2, I-1)
+mark(find-7, that-3)
+det(parties-5, both-4)
+nsubj(find-7, parties-5)
+aux(find-7, should-6)
+ccomp(replied-2, find-7)
+nmod:poss(representatives-11, their-8)
+amod(representatives-11, own-9)
+amod(representatives-11, legal-10)
+nsubjpass(submitted-16, representatives-11)
+cc(representatives-11, and-12)
+nsubjpass(submitted-16, deposit-13)
+aux(submitted-16, could-14)
+auxpass(submitted-16, be-15)
+ccomp(find-7, submitted-16)
+case(lawyer-21, to-17)
+det(buyer-19, the-18)
+nmod:poss(lawyer-21, buyer-19)
+case(buyer-19, 's-20)
+nmod:to(submitted-16, lawyer-21)
+cc(lawyer-21, or-22)
+nmod:poss(Brokerage-24, our-23)
+conj:or(lawyer-21, Brokerage-24)
+
+root(ROOT-0, find-7)
+det(parties-5, both-4)
+nsubj(find-7, parties-5)
+nmod:poss(representatives-11, their-8)
+amod(representatives-11, own-9)
+amod(representatives-11, legal-10)
+nsubjpass(submitted-16, representatives-11)
+cc(representatives-11, and-12)
+nsubjpass(submitted-16, deposit-13)
+aux(submitted-16, could-14)
+auxpass(submitted-16, be-15)
+ccomp(find-7, submitted-16)
+case(lawyer-21, to-17)
+det(buyer-19, the-18)
+nmod:poss(lawyer-21, buyer-19)
+case(buyer-19, 's-20)
+nmod:to(submitted-16, lawyer-21)
+cc(lawyer-21, or-22)
+nmod:poss(Brokerage-24, our-23)
+conj:or(lawyer-21, Brokerage-24)
+
+root(ROOT-0, submitted-16)
+nmod:poss(representatives-11, their-8)
+amod(representatives-11, own-9)
+amod(representatives-11, legal-10)
+nsubjpass(submitted-16, representatives-11)
+cc(representatives-11, and-12)
+nsubjpass(submitted-16, deposit-13)
+auxpass(submitted-16, be-15)
+case(lawyer-21, to-17)
+det(buyer-19, the-18)
+nmod:poss(lawyer-21, buyer-19)
+case(buyer-19, 's-20)
+nmod:to(submitted-16, lawyer-21)
+cc(lawyer-21, or-22)
+nmod:poss(Brokerage-24, our-23)
+conj:or(lawyer-21, Brokerage-24)
+
+
+Sentence #6: The release of the deposit would be handled by the lawyers.
+root(ROOT-0, handled-8)
+det(release-2, The-1)
+nsubjpass(handled-8, release-2)
+case(deposit-5, of-3)
+det(deposit-5, the-4)
+nmod:of(release-2, deposit-5)
+aux(handled-8, would-6)
+auxpass(handled-8, be-7)
+case(lawyers-11, by-9)
+det(lawyers-11, the-10)
+nmod:agent(handled-8, lawyers-11)
+punct(handled-8, .-12)
+
+------
+triple
+1.0	release	would	would handled
+------
+triple
+1.0	release	would	would handled by lawyers
+root(ROOT-0, handled-8)
+det(release-2, The-1)
+nsubjpass(handled-8, release-2)
+case(deposit-5, of-3)
+det(deposit-5, the-4)
+nmod:of(release-2, deposit-5)
+aux(handled-8, would-6)
+auxpass(handled-8, be-7)
+case(lawyers-11, by-9)
+det(lawyers-11, the-10)
+nmod:agent(handled-8, lawyers-11)
+
+
+Sentence #7: Our Brokerage received the deposit ($200,000) on 14 Dec 2012 and receipt was issued.
+root(ROOT-0, received-3)
+nmod:poss(Brokerage-2, Our-1)
+nsubj(received-3, Brokerage-2)
+det(deposit-5, the-4)
+dobj(received-3, deposit-5)
+punct(200,000-8, -LRB--6)
+dep(200,000-8, $-7)
+appos(deposit-5, 200,000-8)
+punct(200,000-8, -RRB--9)
+case(Dec-12, on-10)
+nummod(Dec-12, 14-11)
+nmod:on(received-3, Dec-12)
+nummod(Dec-12, 2012-13)
+cc(received-3, and-14)
+nsubjpass(issued-17, receipt-15)
+auxpass(issued-17, was-16)
+conj:and(received-3, issued-17)
+punct(received-3, .-18)
+
+------
+triple
+1.0	receipt	was	issued
+------
+triple
+1.0	Our Brokerage	received	deposit
+------
+triple
+1.0	Our Brokerage	received deposit on	14 Dec 2012
+root(ROOT-0, received-3)
+nmod:poss(Brokerage-2, Our-1)
+nsubj(received-3, Brokerage-2)
+det(deposit-5, the-4)
+dobj(received-3, deposit-5)
+dep(200,000-8, $-7)
+appos(deposit-5, 200,000-8)
+case(Dec-12, on-10)
+nummod(Dec-12, 14-11)
+nmod:on(received-3, Dec-12)
+nummod(Dec-12, 2012-13)
+cc(received-3, and-14)
+nsubjpass(issued-17, receipt-15)
+auxpass(issued-17, was-16)
+conj:and(received-3, issued-17)
+
+root(ROOT-0, issued-17)
+nsubjpass(issued-17, receipt-15)
+auxpass(issued-17, was-16)
+
+
+Sentence #8: The subject free offer was received by email on 17 Dec 2012.
+root(ROOT-0, received-6)
+det(offer-4, The-1)
+amod(offer-4, subject-2)
+amod(offer-4, free-3)
+nsubjpass(received-6, offer-4)
+auxpass(received-6, was-5)
+case(email-8, by-7)
+nmod:agent(received-6, email-8)
+case(Dec-11, on-9)
+nummod(Dec-11, 17-10)
+nmod:on(received-6, Dec-11)
+nummod(Dec-11, 2012-12)
+punct(received-6, .-13)
+
+------
+triple
+1.0	subject offer	was received by	email
+------
+triple
+1.0	subject offer	was	received
+------
+triple
+1.0	offer	was received by	email
+------
+triple
+1.0	free offer	was	received
+------
+triple
+1.0	free offer	was received on	17 Dec 2012
+------
+triple
+1.0	free offer	was	received by email on 17 Dec 2012
+------
+triple
+1.0	offer	was	received
+------
+triple
+1.0	offer	was received on	17 Dec 2012
+------
+triple
+1.0	subject free offer	was	received
+------
+triple
+1.0	offer	was	received by email on 17 Dec 2012
+------
+triple
+1.0	subject free offer	was	received by email on 17 Dec 2012
+------
+triple
+1.0	subject free offer	was received on	17 Dec 2012
+------
+triple
+1.0	free offer	was received by	email
+------
+triple
+1.0	subject offer	was received on	17 Dec 2012
+------
+triple
+1.0	subject offer	was	received by email on 17 Dec 2012
+------
+triple
+1.0	subject free offer	was received by	email
+root(ROOT-0, received-6)
+det(offer-4, The-1)
+amod(offer-4, subject-2)
+amod(offer-4, free-3)
+nsubjpass(received-6, offer-4)
+auxpass(received-6, was-5)
+case(email-8, by-7)
+nmod:agent(received-6, email-8)
+case(Dec-11, on-9)
+nummod(Dec-11, 17-10)
+nmod:on(received-6, Dec-11)
+nummod(Dec-11, 2012-12)
+
+
+Sentence #9: On the page 2 of 6 in the contract, it states 'The Buyers agree to increase the deposit to TWO MILLION Dollars on or before January 13th, 2013 and authorize the selling brokerage 'Amex Flamenco Realty' to release the TWO MILLION DOLLARS deposit directly to the Seller, no later than January 11th, 2013.'
+root(ROOT-0, states-12)
+case(page-3, On-1)
+det(page-3, the-2)
+nmod:on(states-12, page-3)
+nummod(page-3, 2-4)
+case(6-6, of-5)
+nmod:of(page-3, 6-6)
+case(contract-9, in-7)
+det(contract-9, the-8)
+nmod:in(page-3, contract-9)
+punct(states-12, ,-10)
+nsubj(states-12, it-11)
+punct(states-12, `-13)
+det(Buyers-15, The-14)
+nsubj(agree-16, Buyers-15)
+nsubj:xsubj(increase-18, Buyers-15)
+ccomp(states-12, agree-16)
+mark(increase-18, to-17)
+xcomp(agree-16, increase-18)
+det(deposit-20, the-19)
+dobj(increase-18, deposit-20)
+case(Dollars-24, to-21)
+nummod(Dollars-24, TWO-22)
+compound(Dollars-24, MILLION-23)
+nmod:to(increase-18, Dollars-24)
+case(January-28, on-25)
+cc(on-25, or-26)
+conj:or(on-25, before-27)
+nmod:on(increase-18, January-28)
+amod(January-28, 13th-29)
+punct(January-28, ,-30)
+nummod(January-28, 2013-31)
+cc(increase-18, and-32)
+xcomp(agree-16, authorize-33)
+conj:and(increase-18, authorize-33)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+punct(Realty-40, `-37)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+dobj(authorize-33, Realty-40)
+nsubj:xsubj(release-43, Realty-40)
+case(Realty-40, '-41)
+mark(release-43, to-42)
+xcomp(authorize-33, release-43)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+punct(release-43, ,-53)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+punct(January-57, ,-59)
+nummod(January-57, 2013-60)
+punct(states-12, .-61)
+punct(states-12, '-62)
+
+------
+triple
+1.0	page 2	is in	contract
+------
+triple
+1.0	it	states On	page 2
+------
+triple
+1.0	Buyers	increase	deposit
+------
+triple
+1.0	it	states On	page 2 of 6
+------
+triple
+1.0	it	states On	page 2 in contract
+------
+triple
+1.0	Buyers	increase deposit on	January 13th 2013
+------
+triple
+1.0	deposit	authorize	selling brokerage Amex Flamenco Realty
+------
+triple
+1.0	Buyers	increase deposit on	January 2013
+------
+triple
+1.0	selling brokerage Amex Flamenco Realty	release	TWO MILLION DOLLARS deposit
+------
+triple
+1.0	selling brokerage Amex Flamenco Realty	release directly	TWO MILLION DOLLARS deposit
+------
+triple
+1.0	Buyers	increase deposit to	TWO MILLION Dollars
+------
+triple
+1.0	it	states On	page 2 of 6 in contract
+root(ROOT-0, states-12)
+case(page-3, On-1)
+det(page-3, the-2)
+nmod:on(states-12, page-3)
+nummod(page-3, 2-4)
+case(6-6, of-5)
+nmod:of(page-3, 6-6)
+case(contract-9, in-7)
+det(contract-9, the-8)
+nmod:in(page-3, contract-9)
+nsubj(states-12, it-11)
+det(Buyers-15, The-14)
+nsubj(agree-16, Buyers-15)
+ccomp(states-12, agree-16)
+mark(increase-18, to-17)
+xcomp(agree-16, increase-18)
+det(deposit-20, the-19)
+dobj(increase-18, deposit-20)
+case(Dollars-24, to-21)
+nummod(Dollars-24, TWO-22)
+compound(Dollars-24, MILLION-23)
+nmod:to(increase-18, Dollars-24)
+case(January-28, on-25)
+cc(on-25, or-26)
+conj:or(on-25, before-27)
+nmod:on(increase-18, January-28)
+amod(January-28, 13th-29)
+nummod(January-28, 2013-31)
+cc(increase-18, and-32)
+conj:and(increase-18, authorize-33)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+dobj(authorize-33, Realty-40)
+case(Realty-40, '-41)
+mark(release-43, to-42)
+xcomp(authorize-33, release-43)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+nummod(January-57, 2013-60)
+
+root(ROOT-0, agree-16)
+det(Buyers-15, The-14)
+nsubj(agree-16, Buyers-15)
+mark(increase-18, to-17)
+xcomp(agree-16, increase-18)
+det(deposit-20, the-19)
+dobj(increase-18, deposit-20)
+case(Dollars-24, to-21)
+nummod(Dollars-24, TWO-22)
+compound(Dollars-24, MILLION-23)
+nmod:to(increase-18, Dollars-24)
+case(January-28, on-25)
+cc(on-25, or-26)
+conj:or(on-25, before-27)
+nmod:on(increase-18, January-28)
+amod(January-28, 13th-29)
+nummod(January-28, 2013-31)
+cc(increase-18, and-32)
+conj:and(increase-18, authorize-33)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+dobj(authorize-33, Realty-40)
+case(Realty-40, '-41)
+mark(release-43, to-42)
+xcomp(authorize-33, release-43)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+nummod(January-57, 2013-60)
+
+root(ROOT-0, increase-18)
+det(Buyers-15, The-14)
+nsubj(increase-18, Buyers-15)
+det(deposit-20, the-19)
+dobj(increase-18, deposit-20)
+case(Dollars-24, to-21)
+nummod(Dollars-24, TWO-22)
+compound(Dollars-24, MILLION-23)
+nmod:to(increase-18, Dollars-24)
+case(January-28, on-25)
+cc(on-25, or-26)
+conj:or(on-25, before-27)
+nmod:on(increase-18, January-28)
+amod(January-28, 13th-29)
+nummod(January-28, 2013-31)
+cc(increase-18, and-32)
+conj:and(increase-18, authorize-33)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+dobj(authorize-33, Realty-40)
+case(Realty-40, '-41)
+mark(release-43, to-42)
+xcomp(authorize-33, release-43)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+nummod(January-57, 2013-60)
+
+root(ROOT-0, authorize-33)
+det(deposit-20, the-19)
+nsubj(authorize-33, deposit-20)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+dobj(authorize-33, Realty-40)
+case(Realty-40, '-41)
+mark(release-43, to-42)
+xcomp(authorize-33, release-43)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+nummod(January-57, 2013-60)
+
+root(ROOT-0, release-43)
+det(Realty-40, the-34)
+compound(Realty-40, selling-35)
+compound(Realty-40, brokerage-36)
+compound(Realty-40, Amex-38)
+compound(Realty-40, Flamenco-39)
+nsubj(release-43, Realty-40)
+case(Realty-40, '-41)
+det(deposit-48, the-44)
+nummod(deposit-48, TWO-45)
+compound(deposit-48, MILLION-46)
+compound(deposit-48, DOLLARS-47)
+dobj(release-43, deposit-48)
+advmod(release-43, directly-49)
+case(Seller-52, to-50)
+det(Seller-52, the-51)
+nmod:to(release-43, Seller-52)
+neg(later-55, no-54)
+advmod(release-43, later-55)
+case(January-57, than-56)
+nmod:than(later-55, January-57)
+amod(January-57, 11th-58)
+nummod(January-57, 2013-60)
+
+
+Sentence #10: According to my realtor, the buyers realized the risk and the deposit would be held by the seller if the deal was not going to complete.
+root(ROOT-0, realized-8)
+case(realtor-4, According-1)
+mwe(According-1, to-2)
+nmod:poss(realtor-4, my-3)
+nmod:according_to(realized-8, realtor-4)
+punct(realized-8, ,-5)
+det(buyers-7, the-6)
+nsubj(realized-8, buyers-7)
+det(risk-10, the-9)
+nsubjpass(held-16, risk-10)
+cc(risk-10, and-11)
+det(deposit-13, the-12)
+conj:and(risk-10, deposit-13)
+nsubjpass(held-16, deposit-13)
+aux(held-16, would-14)
+auxpass(held-16, be-15)
+ccomp(realized-8, held-16)
+case(seller-19, by-17)
+det(seller-19, the-18)
+nmod:agent(held-16, seller-19)
+mark(going-25, if-20)
+det(deal-22, the-21)
+nsubj(going-25, deal-22)
+nsubj:xsubj(complete-27, deal-22)
+aux(going-25, was-23)
+neg(going-25, not-24)
+advcl:if(held-16, going-25)
+mark(complete-27, to-26)
+xcomp(going-25, complete-27)
+punct(realized-8, .-28)
+
+------
+triple
+1.0	buyers	realized According to	my realtor
+root(ROOT-0, realized-8)
+case(realtor-4, According-1)
+mwe(According-1, to-2)
+nmod:poss(realtor-4, my-3)
+nmod:according_to(realized-8, realtor-4)
+det(buyers-7, the-6)
+nsubj(realized-8, buyers-7)
+det(risk-10, the-9)
+nsubjpass(held-16, risk-10)
+cc(risk-10, and-11)
+det(deposit-13, the-12)
+nsubjpass(held-16, deposit-13)
+aux(held-16, would-14)
+auxpass(held-16, be-15)
+ccomp(realized-8, held-16)
+case(seller-19, by-17)
+det(seller-19, the-18)
+nmod:agent(held-16, seller-19)
+mark(going-25, if-20)
+det(deal-22, the-21)
+nsubj(going-25, deal-22)
+aux(going-25, was-23)
+neg(going-25, not-24)
+advcl:if(held-16, going-25)
+mark(complete-27, to-26)
+xcomp(going-25, complete-27)
+
+root(ROOT-0, held-16)
+det(risk-10, the-9)
+nsubjpass(held-16, risk-10)
+cc(risk-10, and-11)
+det(deposit-13, the-12)
+nsubjpass(held-16, deposit-13)
+auxpass(held-16, be-15)
+case(seller-19, by-17)
+det(seller-19, the-18)
+nmod:agent(held-16, seller-19)
+mark(going-25, if-20)
+det(deal-22, the-21)
+nsubj(going-25, deal-22)
+aux(going-25, was-23)
+neg(going-25, not-24)
+advcl:if(held-16, going-25)
+mark(complete-27, to-26)
+xcomp(going-25, complete-27)
+
+root(ROOT-0, going-25)
+mark(going-25, if-20)
+det(deal-22, the-21)
+nsubj(going-25, deal-22)
+aux(going-25, was-23)
+neg(going-25, not-24)
+mark(complete-27, to-26)
+xcomp(going-25, complete-27)
+
+root(ROOT-0, complete-27)
+det(deal-22, the-21)
+nsubj(complete-27, deal-22)
+
+
+Sentence #11: Therefore, I required our Realtor to add an addendum to mention 'Buyer and seller both agree that, if the buyer fails to complete the deal on Feb 25, 2013, the total deposit (two million Canadian dollars) is irreversible.
+root(ROOT-0, required-4)
+advmod(required-4, Therefore-1)
+punct(required-4, ,-2)
+nsubj(required-4, I-3)
+nmod:poss(Realtor-6, our-5)
+dobj(required-4, Realtor-6)
+nsubj:xsubj(add-8, Realtor-6)
+mark(add-8, to-7)
+xcomp(required-4, add-8)
+det(addendum-10, an-9)
+dobj(add-8, addendum-10)
+mark(mention-12, to-11)
+advcl:to(add-8, mention-12)
+punct(mention-12, `-13)
+dobj(mention-12, Buyer-14)
+cc(Buyer-14, and-15)
+dobj(mention-12, seller-16)
+conj:and(Buyer-14, seller-16)
+nsubj(agree-18, both-17)
+dep(mention-12, agree-18)
+dep(agree-18, that-19)
+punct(that-19, ,-20)
+mark(fails-24, if-21)
+det(buyer-23, the-22)
+nsubj(fails-24, buyer-23)
+nsubj:xsubj(complete-26, buyer-23)
+root(,-20, fails-24)
+mark(complete-26, to-25)
+xcomp(fails-24, complete-26)
+det(deal-28, the-27)
+dobj(complete-26, deal-28)
+case(Feb-30, on-29)
+nmod:on(deal-28, Feb-30)
+nummod(Feb-30, 25-31)
+punct(Feb-30, ,-32)
+nummod(Feb-30, 2013-33)
+punct(Feb-30, ,-34)
+det(deposit-37, the-35)
+amod(deposit-37, total-36)
+nsubj(irreversible-45, deposit-37)
+punct(dollars-42, -LRB--38)
+compound(million-40, two-39)
+nummod(dollars-42, million-40)
+amod(dollars-42, Canadian-41)
+appos(deposit-37, dollars-42)
+punct(dollars-42, -RRB--43)
+cop(irreversible-45, is-44)
+acl:relcl(Feb-30, irreversible-45)
+punct(fails-24, .-46)
+
+------
+triple
+1.0	I	required	our Realtor
+------
+triple
+1.0	I	Therefore required	our Realtor
+------
+triple
+1.0	our Realtor	add	addendum
+root(ROOT-0, required-4)
+advmod(required-4, Therefore-1)
+nsubj(required-4, I-3)
+nmod:poss(Realtor-6, our-5)
+dobj(required-4, Realtor-6)
+mark(add-8, to-7)
+xcomp(required-4, add-8)
+det(addendum-10, an-9)
+dobj(add-8, addendum-10)
+mark(mention-12, to-11)
+advcl:to(add-8, mention-12)
+dobj(mention-12, Buyer-14)
+cc(Buyer-14, and-15)
+dobj(mention-12, seller-16)
+nsubj(agree-18, both-17)
+dep(mention-12, agree-18)
+dep(agree-18, that-19)
+punct(that-19, ,-20)
+mark(fails-24, if-21)
+det(buyer-23, the-22)
+nsubj(fails-24, buyer-23)
+root(,-20, fails-24)
+mark(complete-26, to-25)
+xcomp(fails-24, complete-26)
+det(deal-28, the-27)
+dobj(complete-26, deal-28)
+case(Feb-30, on-29)
+nmod:on(deal-28, Feb-30)
+nummod(Feb-30, 25-31)
+nummod(Feb-30, 2013-33)
+det(deposit-37, the-35)
+amod(deposit-37, total-36)
+nsubj(irreversible-45, deposit-37)
+compound(million-40, two-39)
+nummod(dollars-42, million-40)
+amod(dollars-42, Canadian-41)
+appos(deposit-37, dollars-42)
+cop(irreversible-45, is-44)
+acl:relcl(Feb-30, irreversible-45)
+
+root(ROOT-0, add-8)
+nmod:poss(Realtor-6, our-5)
+nsubj(add-8, Realtor-6)
+det(addendum-10, an-9)
+dobj(add-8, addendum-10)
+mark(mention-12, to-11)
+advcl:to(add-8, mention-12)
+dobj(mention-12, Buyer-14)
+cc(Buyer-14, and-15)
+dobj(mention-12, seller-16)
+nsubj(agree-18, both-17)
+dep(mention-12, agree-18)
+dep(agree-18, that-19)
+punct(that-19, ,-20)
+mark(fails-24, if-21)
+det(buyer-23, the-22)
+nsubj(fails-24, buyer-23)
+root(,-20, fails-24)
+mark(complete-26, to-25)
+xcomp(fails-24, complete-26)
+det(deal-28, the-27)
+dobj(complete-26, deal-28)
+case(Feb-30, on-29)
+nmod:on(deal-28, Feb-30)
+nummod(Feb-30, 25-31)
+nummod(Feb-30, 2013-33)
+det(deposit-37, the-35)
+amod(deposit-37, total-36)
+nsubj(irreversible-45, deposit-37)
+compound(million-40, two-39)
+nummod(dollars-42, million-40)
+amod(dollars-42, Canadian-41)
+appos(deposit-37, dollars-42)
+cop(irreversible-45, is-44)
+acl:relcl(Feb-30, irreversible-45)
+
+root(ROOT-0, mention-12)
+mark(mention-12, to-11)
+dobj(mention-12, Buyer-14)
+cc(Buyer-14, and-15)
+dobj(mention-12, seller-16)
+nsubj(agree-18, both-17)
+dep(mention-12, agree-18)
+dep(agree-18, that-19)
+punct(that-19, ,-20)
+mark(fails-24, if-21)
+det(buyer-23, the-22)
+nsubj(fails-24, buyer-23)
+root(,-20, fails-24)
+mark(complete-26, to-25)
+xcomp(fails-24, complete-26)
+det(deal-28, the-27)
+dobj(complete-26, deal-28)
+case(Feb-30, on-29)
+nmod:on(deal-28, Feb-30)
+nummod(Feb-30, 25-31)
+nummod(Feb-30, 2013-33)
+det(deposit-37, the-35)
+amod(deposit-37, total-36)
+nsubj(irreversible-45, deposit-37)
+compound(million-40, two-39)
+nummod(dollars-42, million-40)
+amod(dollars-42, Canadian-41)
+appos(deposit-37, dollars-42)
+cop(irreversible-45, is-44)
+acl:relcl(Feb-30, irreversible-45)
+
+
+Sentence #12: That is, the total deposit will not be returned to the buyer and the seller will keep the deposit (two million Canadian dollars) as compensation after Feb 24, 2013.
+root(ROOT-0, is-2)
+nsubj(is-2, That-1)
+punct(is-2, ,-3)
+det(deposit-6, the-4)
+amod(deposit-6, total-5)
+nsubjpass(returned-10, deposit-6)
+aux(returned-10, will-7)
+neg(returned-10, not-8)
+auxpass(returned-10, be-9)
+ccomp(is-2, returned-10)
+case(buyer-13, to-11)
+det(buyer-13, the-12)
+nmod:to(returned-10, buyer-13)
+cc(buyer-13, and-14)
+det(seller-16, the-15)
+nmod:to(returned-10, seller-16)
+conj:and(buyer-13, seller-16)
+aux(keep-18, will-17)
+ccomp(returned-10, keep-18)
+det(deposit-20, the-19)
+dobj(keep-18, deposit-20)
+punct(dollars-25, -LRB--21)
+compound(million-23, two-22)
+nummod(dollars-25, million-23)
+amod(dollars-25, Canadian-24)
+appos(deposit-20, dollars-25)
+punct(dollars-25, -RRB--26)
+case(compensation-28, as-27)
+nmod:as(keep-18, compensation-28)
+case(Feb-30, after-29)
+nmod:after(keep-18, Feb-30)
+nummod(Feb-30, 24-31)
+punct(Feb-30, ,-32)
+nummod(Feb-30, 2013-33)
+punct(is-2, .-34)
+
+root(ROOT-0, is-2)
+nsubj(is-2, That-1)
+det(deposit-6, the-4)
+amod(deposit-6, total-5)
+nsubjpass(returned-10, deposit-6)
+aux(returned-10, will-7)
+neg(returned-10, not-8)
+auxpass(returned-10, be-9)
+ccomp(is-2, returned-10)
+case(buyer-13, to-11)
+det(buyer-13, the-12)
+nmod:to(returned-10, buyer-13)
+cc(buyer-13, and-14)
+det(seller-16, the-15)
+conj:and(buyer-13, seller-16)
+aux(keep-18, will-17)
+ccomp(returned-10, keep-18)
+det(deposit-20, the-19)
+dobj(keep-18, deposit-20)
+compound(million-23, two-22)
+nummod(dollars-25, million-23)
+amod(dollars-25, Canadian-24)
+appos(deposit-20, dollars-25)
+case(compensation-28, as-27)
+nmod:as(keep-18, compensation-28)
+case(Feb-30, after-29)
+nmod:after(keep-18, Feb-30)
+nummod(Feb-30, 24-31)
+nummod(Feb-30, 2013-33)
+
+root(ROOT-0, returned-10)
+det(deposit-6, the-4)
+amod(deposit-6, total-5)
+nsubjpass(returned-10, deposit-6)
+neg(returned-10, not-8)
+auxpass(returned-10, be-9)
+case(buyer-13, to-11)
+det(buyer-13, the-12)
+nmod:to(returned-10, buyer-13)
+cc(buyer-13, and-14)
+det(seller-16, the-15)
+conj:and(buyer-13, seller-16)
+aux(keep-18, will-17)
+ccomp(returned-10, keep-18)
+det(deposit-20, the-19)
+dobj(keep-18, deposit-20)
+compound(million-23, two-22)
+nummod(dollars-25, million-23)
+amod(dollars-25, Canadian-24)
+appos(deposit-20, dollars-25)
+case(compensation-28, as-27)
+nmod:as(keep-18, compensation-28)
+case(Feb-30, after-29)
+nmod:after(keep-18, Feb-30)
+nummod(Feb-30, 24-31)
+nummod(Feb-30, 2013-33)
+
+root(ROOT-0, keep-18)
+det(deposit-20, the-19)
+dobj(keep-18, deposit-20)
+compound(million-23, two-22)
+nummod(dollars-25, million-23)
+amod(dollars-25, Canadian-24)
+appos(deposit-20, dollars-25)
+case(compensation-28, as-27)
+nmod:as(keep-18, compensation-28)
+case(Feb-30, after-29)
+nmod:after(keep-18, Feb-30)
+nummod(Feb-30, 24-31)
+nummod(Feb-30, 2013-33)
+
+
+Sentence #13: Both parties agree not to file any lawsuit upon the failure of deal completion.'
+root(ROOT-0, agree-3)
+det(parties-2, Both-1)
+nsubj(agree-3, parties-2)
+nsubj:xsubj(file-6, parties-2)
+neg(file-6, not-4)
+mark(file-6, to-5)
+xcomp(agree-3, file-6)
+det(lawsuit-8, any-7)
+dobj(file-6, lawsuit-8)
+case(failure-11, upon-9)
+det(failure-11, the-10)
+nmod:upon(file-6, failure-11)
+case(completion-14, of-12)
+compound(completion-14, deal-13)
+nmod:of(failure-11, completion-14)
+punct(agree-3, .-15)
+punct(agree-3, '-16)
+
+root(ROOT-0, agree-3)
+det(parties-2, Both-1)
+nsubj(agree-3, parties-2)
+neg(file-6, not-4)
+mark(file-6, to-5)
+xcomp(agree-3, file-6)
+det(lawsuit-8, any-7)
+dobj(file-6, lawsuit-8)
+case(failure-11, upon-9)
+det(failure-11, the-10)
+nmod:upon(file-6, failure-11)
+case(completion-14, of-12)
+compound(completion-14, deal-13)
+nmod:of(failure-11, completion-14)
+
+root(ROOT-0, file-6)
+det(parties-2, Both-1)
+nsubj(file-6, parties-2)
+neg(file-6, not-4)
+det(lawsuit-8, any-7)
+dobj(file-6, lawsuit-8)
+case(failure-11, upon-9)
+det(failure-11, the-10)
+nmod:upon(file-6, failure-11)
+case(completion-14, of-12)
+compound(completion-14, deal-13)
+nmod:of(failure-11, completion-14)
+
+root(ROOT-0, failure-11)
+det(lawsuit-8, any-7)
+nsubj(failure-11, lawsuit-8)
+case(failure-11, upon-9)
+det(failure-11, the-10)
+case(completion-14, of-12)
+compound(completion-14, deal-13)
+nmod:of(failure-11, completion-14)
+
+
+Sentence #14: However, the buyers refused to sign the addendum and refused to appoint any legal representatives to handle the release of the deposit.
+root(ROOT-0, refused-5)
+advmod(refused-5, However-1)
+punct(refused-5, ,-2)
+det(buyers-4, the-3)
+nsubj(refused-5, buyers-4)
+nsubj:xsubj(sign-7, buyers-4)
+nsubj(refused-11, buyers-4)
+nsubj:xsubj(appoint-13, buyers-4)
+mark(sign-7, to-6)
+xcomp(refused-5, sign-7)
+det(addendum-9, the-8)
+dobj(sign-7, addendum-9)
+cc(refused-5, and-10)
+conj:and(refused-5, refused-11)
+mark(appoint-13, to-12)
+xcomp(refused-11, appoint-13)
+det(representatives-16, any-14)
+amod(representatives-16, legal-15)
+dobj(appoint-13, representatives-16)
+mark(handle-18, to-17)
+advcl:to(appoint-13, handle-18)
+det(release-20, the-19)
+dobj(handle-18, release-20)
+case(deposit-23, of-21)
+det(deposit-23, the-22)
+nmod:of(release-20, deposit-23)
+punct(refused-5, .-24)
+
+------
+triple
+1.0	buyers	sign	addendum
+root(ROOT-0, refused-5)
+advmod(refused-5, However-1)
+det(buyers-4, the-3)
+nsubj(refused-5, buyers-4)
+mark(sign-7, to-6)
+xcomp(refused-5, sign-7)
+det(addendum-9, the-8)
+dobj(sign-7, addendum-9)
+cc(refused-5, and-10)
+conj:and(refused-5, refused-11)
+mark(appoint-13, to-12)
+xcomp(refused-11, appoint-13)
+det(representatives-16, any-14)
+amod(representatives-16, legal-15)
+dobj(appoint-13, representatives-16)
+mark(handle-18, to-17)
+advcl:to(appoint-13, handle-18)
+det(release-20, the-19)
+dobj(handle-18, release-20)
+case(deposit-23, of-21)
+det(deposit-23, the-22)
+nmod:of(release-20, deposit-23)
+
+root(ROOT-0, sign-7)
+det(buyers-4, the-3)
+nsubj(sign-7, buyers-4)
+det(addendum-9, the-8)
+dobj(sign-7, addendum-9)
+
+root(ROOT-0, refused-11)
+det(buyers-4, the-3)
+nsubj(refused-11, buyers-4)
+mark(appoint-13, to-12)
+xcomp(refused-11, appoint-13)
+det(representatives-16, any-14)
+amod(representatives-16, legal-15)
+dobj(appoint-13, representatives-16)
+mark(handle-18, to-17)
+advcl:to(appoint-13, handle-18)
+det(release-20, the-19)
+dobj(handle-18, release-20)
+case(deposit-23, of-21)
+det(deposit-23, the-22)
+nmod:of(release-20, deposit-23)
+
+root(ROOT-0, appoint-13)
+det(buyers-4, the-3)
+nsubj:xsubj(appoint-13, buyers-4)
+det(representatives-16, any-14)
+amod(representatives-16, legal-15)
+dobj(appoint-13, representatives-16)
+mark(handle-18, to-17)
+advcl:to(appoint-13, handle-18)
+det(release-20, the-19)
+dobj(handle-18, release-20)
+case(deposit-23, of-21)
+det(deposit-23, the-22)
+nmod:of(release-20, deposit-23)
+
+root(ROOT-0, handle-18)
+mark(handle-18, to-17)
+det(release-20, the-19)
+dobj(handle-18, release-20)
+case(deposit-23, of-21)
+det(deposit-23, the-22)
+nmod:of(release-20, deposit-23)
+
+
+Sentence #15: After discussing with my realtor, I found the following points of suspicion:
+Buyers insisted not to find a lawyer to represent them and handle the large amount of deposit.
+root(ROOT-0, found-8)
+mark(discussing-2, After-1)
+advcl:after(found-8, discussing-2)
+case(realtor-5, with-3)
+nmod:poss(realtor-5, my-4)
+nmod:with(discussing-2, realtor-5)
+punct(found-8, ,-6)
+nsubj(found-8, I-7)
+det(points-11, the-9)
+amod(points-11, following-10)
+dobj(found-8, points-11)
+case(suspicion-13, of-12)
+nmod:of(points-11, suspicion-13)
+punct(found-8, :-14)
+nsubj(insisted-16, Buyers-15)
+nsubj:xsubj(find-19, Buyers-15)
+parataxis(found-8, insisted-16)
+neg(find-19, not-17)
+mark(find-19, to-18)
+xcomp(insisted-16, find-19)
+det(lawyer-21, a-20)
+dobj(find-19, lawyer-21)
+mark(represent-23, to-22)
+acl:to(lawyer-21, represent-23)
+dobj(represent-23, them-24)
+cc(represent-23, and-25)
+acl:to(lawyer-21, handle-26)
+conj:and(represent-23, handle-26)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+dobj(handle-26, amount-29)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+punct(found-8, .-32)
+
+------
+triple
+1.0	I	found points	discussing
+------
+triple
+1.0	I	found	following points of suspicion
+------
+triple
+1.0	I	found points	discussing with my realtor
+------
+triple
+1.0	I	found	following points
+------
+triple
+1.0	I	discussing with	my realtor
+------
+triple
+1.0	I	found	points of suspicion
+------
+triple
+1.0	I	found	points
+root(ROOT-0, found-8)
+mark(discussing-2, After-1)
+advcl:after(found-8, discussing-2)
+case(realtor-5, with-3)
+nmod:poss(realtor-5, my-4)
+nmod:with(discussing-2, realtor-5)
+nsubj(found-8, I-7)
+det(points-11, the-9)
+amod(points-11, following-10)
+dobj(found-8, points-11)
+case(suspicion-13, of-12)
+nmod:of(points-11, suspicion-13)
+nsubj(insisted-16, Buyers-15)
+parataxis(found-8, insisted-16)
+neg(find-19, not-17)
+mark(find-19, to-18)
+xcomp(insisted-16, find-19)
+det(lawyer-21, a-20)
+dobj(find-19, lawyer-21)
+mark(represent-23, to-22)
+acl:to(lawyer-21, represent-23)
+dobj(represent-23, them-24)
+cc(represent-23, and-25)
+conj:and(represent-23, handle-26)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+dobj(handle-26, amount-29)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+
+root(ROOT-0, insisted-16)
+nsubj(insisted-16, Buyers-15)
+neg(find-19, not-17)
+mark(find-19, to-18)
+xcomp(insisted-16, find-19)
+det(lawyer-21, a-20)
+dobj(find-19, lawyer-21)
+mark(represent-23, to-22)
+acl:to(lawyer-21, represent-23)
+dobj(represent-23, them-24)
+cc(represent-23, and-25)
+conj:and(represent-23, handle-26)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+dobj(handle-26, amount-29)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+
+root(ROOT-0, discussing-2)
+case(realtor-5, with-3)
+nmod:poss(realtor-5, my-4)
+nmod:with(discussing-2, realtor-5)
+nsubj(discussing-2, I-7)
+
+root(ROOT-0, find-19)
+nsubj(find-19, Buyers-15)
+neg(find-19, not-17)
+det(lawyer-21, a-20)
+dobj(find-19, lawyer-21)
+mark(represent-23, to-22)
+acl:to(lawyer-21, represent-23)
+dobj(represent-23, them-24)
+cc(represent-23, and-25)
+conj:and(represent-23, handle-26)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+dobj(handle-26, amount-29)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+
+root(ROOT-0, handle-26)
+nsubj(handle-26, them-24)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+dobj(handle-26, amount-29)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+
+root(ROOT-0, amount-29)
+nsubjpass(amount-29, handle-26)
+det(amount-29, the-27)
+amod(amount-29, large-28)
+case(deposit-31, of-30)
+nmod:of(amount-29, deposit-31)
+
+
+Sentence #16: They simply wanted to wire the deposit and the remaining amount (Four Million Dollars) directly to our trust account from overseas.
+root(ROOT-0, wanted-3)
+nsubj(wanted-3, They-1)
+nsubj:xsubj(wire-5, They-1)
+advmod(wanted-3, simply-2)
+mark(wire-5, to-4)
+xcomp(wanted-3, wire-5)
+det(deposit-7, the-6)
+dobj(wire-5, deposit-7)
+cc(deposit-7, and-8)
+det(amount-11, the-9)
+amod(amount-11, remaining-10)
+dobj(wire-5, amount-11)
+conj:and(deposit-7, amount-11)
+punct(Dollars-15, -LRB--12)
+nummod(Dollars-15, Four-13)
+compound(Dollars-15, Million-14)
+appos(amount-11, Dollars-15)
+punct(Dollars-15, -RRB--16)
+advmod(wire-5, directly-17)
+case(account-21, to-18)
+nmod:poss(account-21, our-19)
+compound(account-21, trust-20)
+nmod:to(wire-5, account-21)
+case(overseas-23, from-22)
+nmod:from(wire-5, overseas-23)
+punct(wanted-3, .-24)
+
+------
+triple
+1.0	They	wire deposit from	overseas
+------
+triple
+1.0	They	wire directly	amount
+------
+triple
+1.0	They	wire amount from	overseas
+------
+triple
+1.0	They	wire deposit directly from	overseas
+------
+triple
+1.0	They	wire directly	deposit
+------
+triple
+1.0	They	wire	deposit
+------
+triple
+1.0	They	wire amount directly to	our trust account
+------
+triple
+1.0	They	wire directly	Four Million Dollars
+------
+triple
+1.0	They	wire amount directly from	overseas
+------
+triple
+1.0	They	wire	Four Million Dollars
+------
+triple
+1.0	They	wire amount to	our trust account
+------
+triple
+1.0	They	wire	amount
+------
+triple
+1.0	They	wire	remaining amount
+------
+triple
+1.0	They	wire directly	remaining amount
+------
+triple
+1.0	They	wire deposit directly to	our trust account
+------
+triple
+1.0	They	wire deposit to	our trust account
+root(ROOT-0, wanted-3)
+nsubj(wanted-3, They-1)
+advmod(wanted-3, simply-2)
+mark(wire-5, to-4)
+xcomp(wanted-3, wire-5)
+det(deposit-7, the-6)
+dobj(wire-5, deposit-7)
+cc(deposit-7, and-8)
+det(amount-11, the-9)
+amod(amount-11, remaining-10)
+dobj(wire-5, amount-11)
+nummod(Dollars-15, Four-13)
+compound(Dollars-15, Million-14)
+appos(amount-11, Dollars-15)
+advmod(wire-5, directly-17)
+case(account-21, to-18)
+nmod:poss(account-21, our-19)
+compound(account-21, trust-20)
+nmod:to(wire-5, account-21)
+case(overseas-23, from-22)
+nmod:from(wire-5, overseas-23)
+
+root(ROOT-0, wire-5)
+nsubj(wire-5, They-1)
+det(deposit-7, the-6)
+dobj(wire-5, deposit-7)
+cc(deposit-7, and-8)
+det(amount-11, the-9)
+amod(amount-11, remaining-10)
+dobj(wire-5, amount-11)
+nummod(Dollars-15, Four-13)
+compound(Dollars-15, Million-14)
+appos(amount-11, Dollars-15)
+advmod(wire-5, directly-17)
+case(account-21, to-18)
+nmod:poss(account-21, our-19)
+compound(account-21, trust-20)
+nmod:to(wire-5, account-21)
+case(overseas-23, from-22)
+nmod:from(wire-5, overseas-23)
+
+
+Sentence #17: I refused and confirmed that our Brokerage can only accept the deposit by bank draft issued by local Canadian banks.
+root(ROOT-0, refused-2)
+nsubj(refused-2, I-1)
+nsubj(confirmed-4, I-1)
+cc(refused-2, and-3)
+conj:and(refused-2, confirmed-4)
+mark(accept-10, that-5)
+nmod:poss(Brokerage-7, our-6)
+nsubj(accept-10, Brokerage-7)
+aux(accept-10, can-8)
+advmod(accept-10, only-9)
+ccomp(confirmed-4, accept-10)
+det(deposit-12, the-11)
+dobj(accept-10, deposit-12)
+case(draft-15, by-13)
+compound(draft-15, bank-14)
+nmod:by(accept-10, draft-15)
+acl(draft-15, issued-16)
+case(banks-20, by-17)
+amod(banks-20, local-18)
+amod(banks-20, Canadian-19)
+nmod:by(issued-16, banks-20)
+punct(refused-2, .-21)
+
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft issued by local banks
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft issued by Canadian banks
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft issued
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft issued by local Canadian banks
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft
+------
+triple
+1.0	our Brokerage	accept deposit by	bank draft issued by banks
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft issued by banks
+------
+triple
+1.0	our Brokerage	accept	deposit
+------
+triple
+1.0	our Brokerage	only accept	deposit
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft issued by local Canadian banks
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft issued by local banks
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft issued
+------
+triple
+1.0	our Brokerage	only accept deposit by	bank draft issued by Canadian banks
+root(ROOT-0, refused-2)
+nsubj(refused-2, I-1)
+cc(refused-2, and-3)
+conj:and(refused-2, confirmed-4)
+mark(accept-10, that-5)
+nmod:poss(Brokerage-7, our-6)
+nsubj(accept-10, Brokerage-7)
+aux(accept-10, can-8)
+advmod(accept-10, only-9)
+ccomp(confirmed-4, accept-10)
+det(deposit-12, the-11)
+dobj(accept-10, deposit-12)
+case(draft-15, by-13)
+compound(draft-15, bank-14)
+nmod:by(accept-10, draft-15)
+acl(draft-15, issued-16)
+case(banks-20, by-17)
+amod(banks-20, local-18)
+amod(banks-20, Canadian-19)
+nmod:by(issued-16, banks-20)
+
+root(ROOT-0, confirmed-4)
+nsubj(confirmed-4, I-1)
+mark(accept-10, that-5)
+nmod:poss(Brokerage-7, our-6)
+nsubj(accept-10, Brokerage-7)
+aux(accept-10, can-8)
+advmod(accept-10, only-9)
+ccomp(confirmed-4, accept-10)
+det(deposit-12, the-11)
+dobj(accept-10, deposit-12)
+case(draft-15, by-13)
+compound(draft-15, bank-14)
+nmod:by(accept-10, draft-15)
+acl(draft-15, issued-16)
+case(banks-20, by-17)
+amod(banks-20, local-18)
+amod(banks-20, Canadian-19)
+nmod:by(issued-16, banks-20)
+
+root(ROOT-0, accept-10)
+nmod:poss(Brokerage-7, our-6)
+nsubj(accept-10, Brokerage-7)
+advmod(accept-10, only-9)
+det(deposit-12, the-11)
+dobj(accept-10, deposit-12)
+case(draft-15, by-13)
+compound(draft-15, bank-14)
+nmod:by(accept-10, draft-15)
+acl(draft-15, issued-16)
+case(banks-20, by-17)
+amod(banks-20, local-18)
+amod(banks-20, Canadian-19)
+nmod:by(issued-16, banks-20)
+
+
+Sentence #18: Since they refused to appoint the lawyers to release the deposit, I didn't approve the clause  written on page 2 of 6 in the contract.
+root(ROOT-0, approve-16)
+mark(refused-3, Since-1)
+nsubj(refused-3, they-2)
+nsubj:xsubj(appoint-5, they-2)
+advcl:since(approve-16, refused-3)
+mark(appoint-5, to-4)
+xcomp(refused-3, appoint-5)
+det(lawyers-7, the-6)
+dobj(appoint-5, lawyers-7)
+nsubj:xsubj(release-9, lawyers-7)
+mark(release-9, to-8)
+xcomp(appoint-5, release-9)
+det(deposit-11, the-10)
+dobj(release-9, deposit-11)
+punct(approve-16, ,-12)
+nsubj(approve-16, I-13)
+aux(approve-16, did-14)
+neg(approve-16, n't-15)
+det(clause-18, the-17)
+dobj(approve-16, clause-18)
+acl(clause-18, written-19)
+case(page-21, on-20)
+nmod:on(written-19, page-21)
+nummod(page-21, 2-22)
+case(6-24, of-23)
+nmod:of(page-21, 6-24)
+case(contract-27, in-25)
+det(contract-27, the-26)
+nmod:in(approve-16, contract-27)
+punct(approve-16, .-28)
+
+root(ROOT-0, approve-16)
+mark(refused-3, Since-1)
+nsubj(refused-3, they-2)
+advcl:since(approve-16, refused-3)
+mark(appoint-5, to-4)
+xcomp(refused-3, appoint-5)
+det(lawyers-7, the-6)
+dobj(appoint-5, lawyers-7)
+mark(release-9, to-8)
+xcomp(appoint-5, release-9)
+det(deposit-11, the-10)
+dobj(release-9, deposit-11)
+nsubj(approve-16, I-13)
+aux(approve-16, did-14)
+neg(approve-16, n't-15)
+det(clause-18, the-17)
+dobj(approve-16, clause-18)
+acl(clause-18, written-19)
+case(page-21, on-20)
+nmod:on(written-19, page-21)
+nummod(page-21, 2-22)
+case(6-24, of-23)
+nmod:of(page-21, 6-24)
+case(contract-27, in-25)
+det(contract-27, the-26)
+nmod:in(approve-16, contract-27)
+
+root(ROOT-0, refused-3)
+mark(refused-3, Since-1)
+nsubj(refused-3, they-2)
+mark(appoint-5, to-4)
+xcomp(refused-3, appoint-5)
+det(lawyers-7, the-6)
+dobj(appoint-5, lawyers-7)
+mark(release-9, to-8)
+xcomp(appoint-5, release-9)
+det(deposit-11, the-10)
+dobj(release-9, deposit-11)
+
+root(ROOT-0, appoint-5)
+nsubj(appoint-5, they-2)
+det(lawyers-7, the-6)
+dobj(appoint-5, lawyers-7)
+mark(release-9, to-8)
+xcomp(appoint-5, release-9)
+det(deposit-11, the-10)
+dobj(release-9, deposit-11)
+
+root(ROOT-0, release-9)
+det(lawyers-7, the-6)
+nsubj(release-9, lawyers-7)
+det(deposit-11, the-10)
+dobj(release-9, deposit-11)
+
+root(ROOT-0, page-21)
+nsubjpass(page-21, written-19)
+case(page-21, on-20)
+nummod(page-21, 2-22)
+case(6-24, of-23)
+nmod:of(page-21, 6-24)
+
+root(ROOT-0, clause-18)
+det(clause-18, the-17)
+acl(clause-18, written-19)
+case(page-21, on-20)
+nmod:on(written-19, page-21)
+nummod(page-21, 2-22)
+case(6-24, of-23)
+nmod:of(page-21, 6-24)
+
+
+Sentence #19: I am therefore writing to seek your guidance on this deal.
+root(ROOT-0, writing-4)
+nsubj(writing-4, I-1)
+nsubj:xsubj(seek-6, I-1)
+aux(writing-4, am-2)
+advmod(writing-4, therefore-3)
+mark(seek-6, to-5)
+xcomp(writing-4, seek-6)
+nmod:poss(guidance-8, your-7)
+dobj(seek-6, guidance-8)
+case(deal-11, on-9)
+det(deal-11, this-10)
+nmod:on(guidance-8, deal-11)
+punct(writing-4, .-12)
+
+------
+triple
+1.0	I	seek	your guidance on deal
+------
+triple
+1.0	I	seek	your guidance
+root(ROOT-0, writing-4)
+nsubj(writing-4, I-1)
+aux(writing-4, am-2)
+advmod(writing-4, therefore-3)
+mark(seek-6, to-5)
+xcomp(writing-4, seek-6)
+nmod:poss(guidance-8, your-7)
+dobj(seek-6, guidance-8)
+case(deal-11, on-9)
+det(deal-11, this-10)
+nmod:on(guidance-8, deal-11)
+
+root(ROOT-0, seek-6)
+nsubj(seek-6, I-1)
+nmod:poss(guidance-8, your-7)
+dobj(seek-6, guidance-8)
+case(deal-11, on-9)
+det(deal-11, this-10)
+nmod:on(guidance-8, deal-11)
+
+
+Sentence #20: Attached you can find the contract and the emails concerning this deal.
+root(ROOT-0, Attached-1)
+nsubj(find-4, you-2)
+aux(find-4, can-3)
+ccomp(Attached-1, find-4)
+det(contract-6, the-5)
+dobj(find-4, contract-6)
+cc(contract-6, and-7)
+det(emails-9, the-8)
+dobj(find-4, emails-9)
+conj:and(contract-6, emails-9)
+acl(contract-6, concerning-10)
+det(deal-12, this-11)
+dobj(concerning-10, deal-12)
+punct(Attached-1, .-13)
+
+------
+triple
+1.0	you	find	contract
+------
+triple
+1.0	you	find	emails
+root(ROOT-0, Attached-1)
+nsubj(find-4, you-2)
+aux(find-4, can-3)
+ccomp(Attached-1, find-4)
+det(contract-6, the-5)
+dobj(find-4, contract-6)
+cc(contract-6, and-7)
+det(emails-9, the-8)
+dobj(find-4, emails-9)
+acl(contract-6, concerning-10)
+det(deal-12, this-11)
+dobj(concerning-10, deal-12)
+
+root(ROOT-0, find-4)
+nsubj(find-4, you-2)
+det(contract-6, the-5)
+dobj(find-4, contract-6)
+cc(contract-6, and-7)
+det(emails-9, the-8)
+dobj(find-4, emails-9)
+acl(contract-6, concerning-10)
+det(deal-12, this-11)
+dobj(concerning-10, deal-12)
+
+
+Sentence #21: Since it is very urgent, I would like to require your prompt reply to this report before 06 Feb 2013.
+root(ROOT-0, like-9)
+mark(urgent-5, Since-1)
+nsubj(urgent-5, it-2)
+cop(urgent-5, is-3)
+advmod(urgent-5, very-4)
+advcl:since(like-9, urgent-5)
+punct(like-9, ,-6)
+nsubj(like-9, I-7)
+nsubj:xsubj(require-11, I-7)
+aux(like-9, would-8)
+mark(require-11, to-10)
+xcomp(like-9, require-11)
+nmod:poss(reply-14, your-12)
+amod(reply-14, prompt-13)
+dobj(require-11, reply-14)
+case(report-17, to-15)
+det(report-17, this-16)
+nmod:to(require-11, report-17)
+case(Feb-20, before-18)
+nummod(Feb-20, 06-19)
+nmod:before(require-11, Feb-20)
+nummod(Feb-20, 2013-21)
+punct(like-9, .-22)
+
+------
+triple
+1.0	I	require	your reply
+------
+triple
+1.0	it	is	urgent
+------
+triple
+1.0	I	would like	very urgent
+------
+triple
+1.0	it	is	very urgent
+------
+triple
+1.0	I	require	your prompt reply
+------
+triple
+1.0	I	would like	urgent
+root(ROOT-0, like-9)
+mark(urgent-5, Since-1)
+nsubj(urgent-5, it-2)
+cop(urgent-5, is-3)
+advmod(urgent-5, very-4)
+advcl:since(like-9, urgent-5)
+nsubj(like-9, I-7)
+aux(like-9, would-8)
+mark(require-11, to-10)
+xcomp(like-9, require-11)
+nmod:poss(reply-14, your-12)
+amod(reply-14, prompt-13)
+dobj(require-11, reply-14)
+case(report-17, to-15)
+det(report-17, this-16)
+nmod:to(require-11, report-17)
+case(Feb-20, before-18)
+nummod(Feb-20, 06-19)
+nmod:before(require-11, Feb-20)
+nummod(Feb-20, 2013-21)
+
+root(ROOT-0, urgent-5)
+mark(urgent-5, Since-1)
+nsubj(urgent-5, it-2)
+cop(urgent-5, is-3)
+advmod(urgent-5, very-4)
+
+root(ROOT-0, require-11)
+nsubj(require-11, I-7)
+nmod:poss(reply-14, your-12)
+amod(reply-14, prompt-13)
+dobj(require-11, reply-14)
+case(report-17, to-15)
+det(report-17, this-16)
+nmod:to(require-11, report-17)
+case(Feb-20, before-18)
+nummod(Feb-20, 06-19)
+nmod:before(require-11, Feb-20)
+nummod(Feb-20, 2013-21)
+
+
+Sentence #22: Thank you.
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+punct(Thank-1, .-3)
+
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+
+
+Sentence #23: If you need any further details, please do not hesitate to contact us.
+root(ROOT-0, hesitate-11)
+mark(need-3, If-1)
+nsubj(need-3, you-2)
+advcl:if(hesitate-11, need-3)
+det(details-6, any-4)
+amod(details-6, further-5)
+dobj(need-3, details-6)
+punct(hesitate-11, ,-7)
+nsubj(hesitate-11, please-8)
+nsubj:xsubj(contact-13, please-8)
+aux(hesitate-11, do-9)
+neg(hesitate-11, not-10)
+mark(contact-13, to-12)
+xcomp(hesitate-11, contact-13)
+dobj(contact-13, us-14)
+punct(hesitate-11, .-15)
+
+root(ROOT-0, hesitate-11)
+mark(need-3, If-1)
+nsubj(need-3, you-2)
+advcl:if(hesitate-11, need-3)
+det(details-6, any-4)
+amod(details-6, further-5)
+dobj(need-3, details-6)
+nsubj(hesitate-11, please-8)
+aux(hesitate-11, do-9)
+neg(hesitate-11, not-10)
+mark(contact-13, to-12)
+xcomp(hesitate-11, contact-13)
+dobj(contact-13, us-14)
+
+root(ROOT-0, need-3)
+mark(need-3, If-1)
+nsubj(need-3, you-2)
+det(details-6, any-4)
+amod(details-6, further-5)
+dobj(need-3, details-6)
+
+root(ROOT-0, contact-13)
+nsubj(contact-13, please-8)
+dobj(contact-13, us-14)
+
+
+Sentence #24: Best Regards,
+Min TZING
+Managing Broker
+root(ROOT-0, Regards-2)
+amod(Regards-2, Best-1)
+punct(Regards-2, ,-3)
+compound(TZING-5, Min-4)
+appos(Regards-2, TZING-5)
+compound(Broker-7, Managing-6)
+dep(TZING-5, Broker-7)
+
+root(ROOT-0, Regards-2)
+amod(Regards-2, Best-1)
+compound(TZING-5, Min-4)
+appos(Regards-2, TZING-5)
+compound(Broker-7, Managing-6)
+dep(TZING-5, Broker-7)

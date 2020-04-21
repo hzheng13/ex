@@ -1,0 +1,104 @@
+-----
+coref chains
+	CHAIN20-["activity" in sentence 1, "This activity" in sentence 3]
+	CHAIN68-["The sample" in sentence 13, "The sample" in sentence 14]
+	CHAIN59-["A police report" in sentence 8, "this report" in sentence 12]
+	CHAIN30-["suspicious activity" in sentence 4, "The suspicious activity" in sentence 6]
+	CHAIN47-["Capital One" in sentence 2, "Capital One" in sentence 9, "Capital One" in sentence 10]
+---
+mentions
+	348729667
+	1/12/2017
+	1234567890123456
+	Credit Card
+	Introduction
+	Internal Case #C92646759 FinTRAC Reference Number
+	Capital One Bank USA , NA -LRB- COBUSANA -RRB-
+	NA -LRB- COBUSANA -RRB-
+	COBUSANA
+	patterns of activity
+	activity
+	credit card account
+	number 1234567890123456 that is indicative
+---
+mentions
+	One
+	fraud
+	an unknown suspect
+	this case based on the external fraud investigation team
+	the external fraud investigation team
+	Capital One
+---
+mentions
+	nature
+	This activity
+---
+mentions
+	3/15/2016
+	5/14/2016
+	$ 8,098.76
+	suspicious activity
+---
+mentions
+	$ 8,098.76
+	Transactional Details : Suspicious transactions posted to the account $ 8,098.76
+	Suspicious transactions
+	to the account $ 8,098.76
+---
+mentions
+	Canada
+	The suspicious activity
+	Walmart , restaurants , Target , Quality Inn , Best Buy and other brick and mortar merchants
+	restaurants
+	Target
+	Quality Inn
+	other brick and mortar merchants
+	mortar merchants
+---
+mentions
+	1234567890123456
+	Account number 1234567890123456
+	Conclusion : Account number 1234567890123456 is closed
+---
+mentions
+	A police report
+---
+mentions
+	One
+	fraud
+	the total fraud loss
+	Capital One
+---
+mentions
+	One
+	$ 8,098.76
+	Capital One
+	a loss of $ 8,098.76
+---
+mentions
+	Supporting documentation
+	either by phone or by email
+	email
+	to ThisIsFake@CapitalOne.com
+---
+mentions
+	Capital One Bank
+	USA
+	$ 30.03
+	All supporting documentation is maintained by Capital One Bank -LRB- USA -RRB- N.A.
+	Capital One Bank -LRB- USA -RRB- N.A.
+	Section B of this report
+	this report
+	a sampling of transactional activity totaling $ 30.03
+	transactional activity totaling $ 30.03
+---
+mentions
+	5/12/2016 to 5/14/2016
+	transaction activity occurring from 5/12/2016 to 5/14/2016
+	The sample
+---
+mentions
+	one
+	1
+	fraudulent charge
+	The sample

@@ -1,0 +1,229 @@
+-----
+coref chains
+	CHAIN64-["Flamenco Realty" in sentence 1, "Realty '" in sentence 9]
+	CHAIN96-["seller" in sentence 4, "the seller" in sentence 10, "the seller" in sentence 12]
+	CHAIN69-["an offer" in sentence 3, "The subject free offer" in sentence 8, "it" in sentence 9]
+	CHAIN103-["an addendum to mention ` Buyer and seller" in sentence 11, "the addendum" in sentence 14]
+	CHAIN135-["the lawyers" in sentence 6, "the lawyers" in sentence 18]
+	CHAIN105-["The release of the deposit" in sentence 6, "the release of the deposit" in sentence 14]
+	CHAIN107-["both parties" in sentence 4, "both parties" in sentence 5, "their" in sentence 5, "The Buyers" in sentence 9, "the buyers" in sentence 10, "Both parties" in sentence 13, "the buyers" in sentence 14]
+	CHAIN146-["a deal which has aroused my suspicion" in sentence 2, "the deal" in sentence 10, "the deal" in sentence 11, "this deal" in sentence 19, "this deal" in sentence 20]
+	CHAIN148-["the contract" in sentence 9, "the contract" in sentence 18, "the contract" in sentence 20, "it" in sentence 21]
+	CHAIN85-["our" in sentence 5, "Our" in sentence 7, "our" in sentence 11]
+	CHAIN149-["I" in sentence 1, "I" in sentence 2, "my" in sentence 2, "my" in sentence 3, "me" in sentence 3, "I" in sentence 5, "my" in sentence 10, "I" in sentence 11, "my" in sentence 15, "I" in sentence 15, "I" in sentence 17, "I" in sentence 18, "I" in sentence 19, "I" in sentence 21]
+	CHAIN89-["both the buyer and seller" in sentence 4, "the buyer 's" in sentence 5, "the buyer" in sentence 11]
+	CHAIN26-["my realtor -LRB- Sammy Sung -RRB-" in sentence 3, "he" in sentence 3, "He" in sentence 4, "my realtor" in sentence 15]
+	CHAIN154-["your" in sentence 19, "you" in sentence 20, "your" in sentence 21, "you" in sentence 22, "you" in sentence 23]
+	CHAIN123-["the large amount of deposit" in sentence 15, "the remaining amount" in sentence 16]
+	CHAIN94-["the deposit" in sentence 4, "the deposit" in sentence 6, "the deposit" in sentence 9, "the deposit" in sentence 10, "the total deposit" in sentence 11, "the total deposit" in sentence 12, "the deposit" in sentence 14, "the deposit" in sentence 17, "the deposit" in sentence 18]
+	CHAIN126-["Buyers" in sentence 15, "them" in sentence 15, "They" in sentence 16, "our" in sentence 16, "our" in sentence 17, "they" in sentence 18]
+	CHAIN127-["our Brokerage" in sentence 5, "Our Brokerage" in sentence 7, "our Brokerage" in sentence 17]
+---
+mentions
+	Min
+	Flamenco Realty
+	I
+	Min TZING , Managing Director of Flamenco Realty
+	Managing Director of Flamenco Realty
+---
+mentions
+	a deal which has aroused my suspicion
+	my
+	my suspicion
+	I
+---
+mentions
+	13 Dec 2012
+	2:00 pm
+	Sammy Sung
+	3330
+	Southbend Road
+	my
+	my realtor -LRB- Sammy Sung -RRB-
+	me
+	text messages
+	he
+	an offer
+	property address
+	West
+	West Vancouver
+	West Vancouver C2V 9K7
+---
+mentions
+	two million Canadian dollars
+	13 Mar 2019
+	He
+	it
+	both the buyer and seller
+	seller
+	deposit
+	the deposit
+	to the seller directly on 13 Mar 2019 as agreed by both parties
+	both parties
+---
+mentions
+	deposit
+	the buyer 's
+	to the buyer 's lawyer or our Brokerage
+	our
+	our Brokerage
+	I
+	both parties
+	their
+	their own legal representatives
+---
+mentions
+	The release of the deposit
+	the deposit
+	the lawyers
+---
+mentions
+	$ 200,000
+	14 Dec 2012
+	Our
+	Our Brokerage
+	the deposit -LRB- $ 200,000 -RRB- on 14
+	receipt
+---
+mentions
+	17 Dec 2012
+	The subject free offer
+	email on 17
+---
+mentions
+	2
+	6
+	TWO MILLION Dollars
+	January 13th , 2013
+	TWO MILLION DOLLARS
+	January 11th , 2013
+	or before January 13th
+	the selling brokerage
+	Amex Flamenco Realty ' to release the TWO MILLION DOLLARS deposit directly to the Seller , no later than January 11th , 2013
+	Realty '
+	the TWO MILLION DOLLARS deposit
+	to the Seller , no later than January 11th , 2013
+	the page 2 of 6 in the contract
+	the contract
+	it
+	The Buyers
+	the deposit
+---
+mentions
+	my
+	According to my realtor
+	the buyers
+	the risk
+	the deposit
+	the seller
+	the deal
+---
+mentions
+	Buyer
+	Feb 25 , 2013
+	two million
+	the total deposit
+	million Canadian dollars
+	I
+	our
+	our Realtor
+	an addendum to mention ` Buyer and seller
+	seller
+	the buyer
+	the deal
+---
+mentions
+	two million Canadian dollars
+	Feb 24 , 2013
+	That is
+	the total deposit
+	to the buyer
+	the seller
+	the deposit -LRB- two million Canadian dollars -RRB- as compensation
+	compensation
+---
+mentions
+	any lawsuit
+	the failure of deal completion
+	deal completion
+	Both parties
+---
+mentions
+	the addendum
+	any legal representatives
+	the release of the deposit
+	the deposit
+	the buyers
+---
+mentions
+	my
+	my realtor
+	I
+	the following points of suspicion
+	suspicion
+	Buyers
+	a lawyer to represent them and handle the large amount of deposit
+	them
+	the large amount of deposit
+	deposit
+---
+mentions
+	Four Million Dollars
+	our
+	to our trust account
+	They
+	the deposit and the remaining amount -LRB- Four Million Dollars -RRB- directly to our trust account from overseas
+	the remaining amount
+---
+mentions
+	local Canadian banks
+	I
+	our
+	our Brokerage
+	the deposit
+	bank draft issued by local Canadian banks
+---
+mentions
+	2
+	6
+	page 2 of 6
+	the contract
+	they
+	the lawyers
+	the deposit
+	I
+	the clause written on page 2 of 6 in the contract
+---
+mentions
+	your
+	your guidance
+	this deal
+	I
+---
+mentions
+	you
+	the contract
+	the emails
+	this deal
+---
+mentions
+	06 Feb 2013
+	it
+	I
+	your
+	your prompt reply
+	to this report
+---
+mentions
+	you
+---
+mentions
+	you
+	any further details
+	us
+---
+mentions
+	Min
+	Broker
+	Min TZING Managing Broker
+	Best Regards , Min TZING Managing Broker

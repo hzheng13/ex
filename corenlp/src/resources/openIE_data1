@@ -1,0 +1,632 @@
+Sentence #1: Introduction:
+Internal Case #C92646759
+FinTRAC Reference Number: 348729667
+On 1/12/2017 Capital One Bank USA, NA (COBUSANA) detected patterns of activity on credit card account number 1234567890123456 that is indicative of Credit Card.
+root(ROOT-0, Introduction-1)
+punct(Introduction-1, :-2)
+amod(Number-8, Internal-3)
+compound(Number-8, Case-4)
+compound(Number-8, #C92646759-5)
+compound(Number-8, FinTRAC-6)
+compound(Number-8, Reference-7)
+dep(Introduction-1, Number-8)
+punct(Number-8, :-9)
+nsubj(detected-22, 348729667-10)
+case(USA-16, On-11)
+nummod(USA-16, 1/12/2017-12)
+compound(USA-16, Capital-13)
+nummod(USA-16, One-14)
+compound(USA-16, Bank-15)
+nmod:on(348729667-10, USA-16)
+punct(USA-16, ,-17)
+appos(USA-16, NA-18)
+punct(COBUSANA-20, -LRB--19)
+appos(NA-18, COBUSANA-20)
+punct(COBUSANA-20, -RRB--21)
+dep(Number-8, detected-22)
+dobj(detected-22, patterns-23)
+nsubj(indicative-34, patterns-23)
+case(activity-25, of-24)
+nmod:of(patterns-23, activity-25)
+case(number-30, on-26)
+compound(number-30, credit-27)
+compound(number-30, card-28)
+compound(number-30, account-29)
+nmod:on(activity-25, number-30)
+nummod(number-30, 1234567890123456-31)
+ref(patterns-23, that-32)
+cop(indicative-34, is-33)
+acl:relcl(patterns-23, indicative-34)
+case(Card-37, of-35)
+compound(Card-37, Credit-36)
+nmod:of(indicative-34, Card-37)
+punct(Introduction-1, .-38)
+
+root(ROOT-0, Introduction-1)
+amod(Number-8, Internal-3)
+compound(Number-8, Case-4)
+compound(Number-8, #C92646759-5)
+compound(Number-8, FinTRAC-6)
+compound(Number-8, Reference-7)
+dep(Introduction-1, Number-8)
+nsubj(detected-22, 348729667-10)
+case(USA-16, On-11)
+nummod(USA-16, 1/12/2017-12)
+compound(USA-16, Capital-13)
+nummod(USA-16, One-14)
+compound(USA-16, Bank-15)
+nmod:on(348729667-10, USA-16)
+appos(USA-16, NA-18)
+appos(NA-18, COBUSANA-20)
+dep(Number-8, detected-22)
+dobj(detected-22, patterns-23)
+case(activity-25, of-24)
+nmod:of(patterns-23, activity-25)
+case(number-30, on-26)
+compound(number-30, credit-27)
+compound(number-30, card-28)
+compound(number-30, account-29)
+nmod:on(activity-25, number-30)
+nummod(number-30, 1234567890123456-31)
+ref(patterns-23, that-32)
+cop(indicative-34, is-33)
+acl:relcl(patterns-23, indicative-34)
+case(Card-37, of-35)
+compound(Card-37, Credit-36)
+nmod:of(indicative-34, Card-37)
+
+
+Sentence #2: Capital One has identified an unknown suspect in this case based on the external fraud investigation team.
+root(ROOT-0, identified-4)
+nsubj(identified-4, Capital-1)
+nummod(Capital-1, One-2)
+aux(identified-4, has-3)
+det(suspect-7, an-5)
+amod(suspect-7, unknown-6)
+dobj(identified-4, suspect-7)
+case(case-10, in-8)
+det(case-10, this-9)
+nmod:in(identified-4, case-10)
+case(team-17, based-11)
+case(team-17, on-12)
+det(team-17, the-13)
+amod(team-17, external-14)
+compound(team-17, fraud-15)
+compound(team-17, investigation-16)
+nmod:on(case-10, team-17)
+punct(identified-4, .-18)
+
+------
+triple
+1.0	Capital	has identified	unknown suspect
+------
+triple
+1.0	Capital One	has identified	suspect
+------
+triple
+1.0	Capital	has identified	suspect
+------
+triple
+1.0	Capital One	has identified suspect in	case
+------
+triple
+1.0	Capital	has identified suspect in	case
+------
+triple
+1.0	Capital One	has identified	unknown suspect
+root(ROOT-0, identified-4)
+nsubj(identified-4, Capital-1)
+nummod(Capital-1, One-2)
+aux(identified-4, has-3)
+det(suspect-7, an-5)
+amod(suspect-7, unknown-6)
+dobj(identified-4, suspect-7)
+case(case-10, in-8)
+det(case-10, this-9)
+nmod:in(identified-4, case-10)
+case(team-17, based-11)
+mwe(based-11, on-12)
+det(team-17, the-13)
+amod(team-17, external-14)
+compound(team-17, fraud-15)
+compound(team-17, investigation-16)
+nmod:based_on(case-10, team-17)
+
+
+Sentence #3: This activity is considered suspicious in nature.
+root(ROOT-0, considered-4)
+det(activity-2, This-1)
+nsubjpass(considered-4, activity-2)
+auxpass(considered-4, is-3)
+xcomp(considered-4, suspicious-5)
+case(nature-7, in-6)
+nmod:in(considered-4, nature-7)
+punct(considered-4, .-8)
+
+------
+triple
+1.0	activity	is considered in	nature
+------
+triple
+1.0	activity	is considered	suspicious
+------
+triple
+1.0	activity	is	considered
+root(ROOT-0, considered-4)
+det(activity-2, This-1)
+nsubjpass(considered-4, activity-2)
+auxpass(considered-4, is-3)
+xcomp(considered-4, suspicious-5)
+case(nature-7, in-6)
+nmod:in(considered-4, nature-7)
+
+root(ROOT-0, suspicious-5)
+
+
+Sentence #4: From 3/15/2016 to 5/14/2016 suspicious activity occurred totaling $8,098.76.
+root(ROOT-0, occurred-7)
+case(activity-6, From-1)
+compound(5/14/2016-4, 3/15/2016-2)
+dep(5/14/2016-4, to-3)
+nummod(activity-6, 5/14/2016-4)
+amod(activity-6, suspicious-5)
+nmod:from(occurred-7, activity-6)
+xcomp(occurred-7, totaling-8)
+dep(8,098.76-10, $-9)
+dobj(totaling-8, 8,098.76-10)
+punct(occurred-7, .-11)
+
+root(ROOT-0, occurred-7)
+case(activity-6, From-1)
+compound(5/14/2016-4, 3/15/2016-2)
+dep(5/14/2016-4, to-3)
+nummod(activity-6, 5/14/2016-4)
+amod(activity-6, suspicious-5)
+nmod:from(occurred-7, activity-6)
+xcomp(occurred-7, totaling-8)
+dep(8,098.76-10, $-9)
+dobj(totaling-8, 8,098.76-10)
+
+root(ROOT-0, totaling-8)
+dep(8,098.76-10, $-9)
+dobj(totaling-8, 8,098.76-10)
+
+
+Sentence #5: Transactional Details:
+Suspicious transactions posted to the account $8,098.76.
+root(ROOT-0, Details-2)
+compound(Details-2, Transactional-1)
+punct(Details-2, :-3)
+amod(transactions-5, Suspicious-4)
+dep(8,098.76-11, transactions-5)
+acl(transactions-5, posted-6)
+case(account-9, to-7)
+det(account-9, the-8)
+nmod:to(posted-6, account-9)
+dep(8,098.76-11, $-10)
+dep(Details-2, 8,098.76-11)
+punct(Details-2, .-12)
+
+root(ROOT-0, Details-2)
+compound(Details-2, Transactional-1)
+amod(transactions-5, Suspicious-4)
+dep(8,098.76-11, transactions-5)
+acl(transactions-5, posted-6)
+case(account-9, to-7)
+det(account-9, the-8)
+nmod:to(posted-6, account-9)
+dep(8,098.76-11, $-10)
+dep(Details-2, 8,098.76-11)
+
+
+Sentence #6: The suspicious activity was conducted in Canada with Walmart, restaurants, Target, Quality Inn, Best Buy and other brick and mortar merchants.
+root(ROOT-0, conducted-5)
+det(activity-3, The-1)
+amod(activity-3, suspicious-2)
+nsubjpass(conducted-5, activity-3)
+auxpass(conducted-5, was-4)
+case(Canada-7, in-6)
+nmod:in(conducted-5, Canada-7)
+case(Walmart-9, with-8)
+nmod:with(conducted-5, Walmart-9)
+punct(Walmart-9, ,-10)
+conj(Walmart-9, restaurants-11)
+punct(Walmart-9, ,-12)
+conj(Walmart-9, Target-13)
+punct(Walmart-9, ,-14)
+compound(Inn-16, Quality-15)
+appos(Walmart-9, Inn-16)
+punct(Walmart-9, ,-17)
+amod(Buy-19, Best-18)
+appos(Walmart-9, Buy-19)
+cc(Buy-19, and-20)
+amod(brick-22, other-21)
+appos(Walmart-9, brick-22)
+conj:and(Buy-19, brick-22)
+cc(brick-22, and-23)
+compound(merchants-25, mortar-24)
+conj:and(Buy-19, merchants-25)
+conj:and(brick-22, merchants-25)
+punct(conducted-5, .-26)
+
+------
+triple
+1.0	suspicious activity	was conducted in	Canada
+------
+triple
+1.0	suspicious activity	was conducted with	Best Buy
+------
+triple
+1.0	suspicious activity	was conducted with	Quality Inn
+------
+triple
+1.0	suspicious activity	was	conducted in Canada with Walmart
+------
+triple
+1.0	suspicious activity	was conducted with	Buy
+------
+triple
+1.0	suspicious activity	was	conducted
+------
+triple
+1.0	suspicious activity	was conducted with	Walmart
+root(ROOT-0, conducted-5)
+det(activity-3, The-1)
+amod(activity-3, suspicious-2)
+nsubjpass(conducted-5, activity-3)
+auxpass(conducted-5, was-4)
+case(Canada-7, in-6)
+nmod:in(conducted-5, Canada-7)
+case(Walmart-9, with-8)
+nmod:with(conducted-5, Walmart-9)
+conj(Walmart-9, restaurants-11)
+conj(Walmart-9, Target-13)
+compound(Inn-16, Quality-15)
+appos(Walmart-9, Inn-16)
+amod(Buy-19, Best-18)
+appos(Walmart-9, Buy-19)
+cc(Buy-19, and-20)
+amod(brick-22, other-21)
+conj:and(Buy-19, brick-22)
+cc(brick-22, and-23)
+compound(merchants-25, mortar-24)
+conj:and(brick-22, merchants-25)
+
+
+Sentence #7: Conclusion:  
+Account number 1234567890123456 is closed.
+root(ROOT-0, Conclusion-1)
+punct(Conclusion-1, :-2)
+compound(number-4, Account-3)
+nsubjpass(closed-7, number-4)
+nummod(number-4, 1234567890123456-5)
+auxpass(closed-7, is-6)
+appos(Conclusion-1, closed-7)
+punct(Conclusion-1, .-8)
+
+------
+triple
+0.7472347274270014	Account number 1234567890123456	is	closed
+------
+triple
+0.7472347274270014	Account number	is	closed
+root(ROOT-0, Conclusion-1)
+compound(number-4, Account-3)
+nsubjpass(closed-7, number-4)
+nummod(number-4, 1234567890123456-5)
+auxpass(closed-7, is-6)
+appos(Conclusion-1, closed-7)
+
+root(ROOT-0, closed-7)
+compound(number-4, Account-3)
+nsubjpass(closed-7, number-4)
+nummod(number-4, 1234567890123456-5)
+auxpass(closed-7, is-6)
+
+
+Sentence #8: A police report has not been filed.
+root(ROOT-0, filed-7)
+det(report-3, A-1)
+compound(report-3, police-2)
+nsubjpass(filed-7, report-3)
+aux(filed-7, has-4)
+neg(filed-7, not-5)
+auxpass(filed-7, been-6)
+punct(filed-7, .-8)
+
+root(ROOT-0, filed-7)
+det(report-3, A-1)
+compound(report-3, police-2)
+nsubjpass(filed-7, report-3)
+aux(filed-7, has-4)
+neg(filed-7, not-5)
+auxpass(filed-7, been-6)
+
+
+Sentence #9: Capital One has been unable to recover the total fraud loss.
+root(ROOT-0, unable-5)
+nsubj(unable-5, Capital-1)
+nsubj:xsubj(recover-7, Capital-1)
+nummod(Capital-1, One-2)
+aux(unable-5, has-3)
+cop(unable-5, been-4)
+mark(recover-7, to-6)
+xcomp(unable-5, recover-7)
+det(loss-11, the-8)
+amod(loss-11, total-9)
+compound(loss-11, fraud-10)
+dobj(recover-7, loss-11)
+punct(unable-5, .-12)
+
+------
+triple
+1.0	Capital One	has	has unable
+------
+triple
+1.0	Capital	recover	total fraud loss
+------
+triple
+1.0	Capital	has	has unable
+------
+triple
+1.0	Capital One	recover	fraud loss
+------
+triple
+1.0	Capital One	recover	total fraud loss
+------
+triple
+1.0	Capital	recover	fraud loss
+root(ROOT-0, unable-5)
+nsubj(unable-5, Capital-1)
+nummod(Capital-1, One-2)
+aux(unable-5, has-3)
+cop(unable-5, been-4)
+mark(recover-7, to-6)
+xcomp(unable-5, recover-7)
+det(loss-11, the-8)
+amod(loss-11, total-9)
+compound(loss-11, fraud-10)
+dobj(recover-7, loss-11)
+
+root(ROOT-0, recover-7)
+nsubj(recover-7, Capital-1)
+nummod(Capital-1, One-2)
+det(loss-11, the-8)
+amod(loss-11, total-9)
+compound(loss-11, fraud-10)
+dobj(recover-7, loss-11)
+
+
+Sentence #10: Capital One is therefore reporting a loss of $8,098.76.
+root(ROOT-0, reporting-5)
+nsubj(reporting-5, Capital-1)
+nummod(Capital-1, One-2)
+aux(reporting-5, is-3)
+advmod(reporting-5, therefore-4)
+det(loss-7, a-6)
+dobj(reporting-5, loss-7)
+case(8,098.76-10, of-8)
+dep(8,098.76-10, $-9)
+nmod:of(loss-7, 8,098.76-10)
+punct(reporting-5, .-11)
+
+------
+triple
+1.0	Capital One	is therefore reporting	loss
+------
+triple
+1.0	Capital	is reporting	loss
+------
+triple
+1.0	Capital One	is reporting	loss
+------
+triple
+1.0	Capital	is therefore reporting	loss
+root(ROOT-0, reporting-5)
+nsubj(reporting-5, Capital-1)
+nummod(Capital-1, One-2)
+aux(reporting-5, is-3)
+advmod(reporting-5, therefore-4)
+det(loss-7, a-6)
+dobj(reporting-5, loss-7)
+case(8,098.76-10, of-8)
+dep(8,098.76-10, $-9)
+nmod:of(loss-7, 8,098.76-10)
+
+
+Sentence #11: Supporting documentation may be requested either by phone or by email to ThisIsFake@CapitalOne.com.
+root(ROOT-0, requested-5)
+csubjpass(requested-5, Supporting-1)
+dobj(Supporting-1, documentation-2)
+aux(requested-5, may-3)
+auxpass(requested-5, be-4)
+cc:preconj(phone-8, either-6)
+case(phone-8, by-7)
+nmod:agent(requested-5, phone-8)
+cc(phone-8, or-9)
+case(email-11, by-10)
+nmod:agent(requested-5, email-11)
+conj:or(phone-8, email-11)
+case(ThisIsFake@CapitalOne.com-13, to-12)
+nmod:to(email-11, ThisIsFake@CapitalOne.com-13)
+punct(requested-5, .-14)
+
+root(ROOT-0, requested-5)
+csubjpass(requested-5, Supporting-1)
+dobj(Supporting-1, documentation-2)
+aux(requested-5, may-3)
+auxpass(requested-5, be-4)
+cc:preconj(phone-8, either-6)
+case(phone-8, by-7)
+nmod:agent(requested-5, phone-8)
+cc(requested-5, or-9)
+case(email-11, by-10)
+nmod:by(requested-5, email-11)
+case(ThisIsFake@CapitalOne.com-13, to-12)
+nmod:to(email-11, ThisIsFake@CapitalOne.com-13)
+
+
+Sentence #12: All supporting documentation is maintained by Capital One Bank (USA) N.A.
+Included in Section B of this report is a sampling of transactional activity totaling $30.03.
+root(ROOT-0, maintained-5)
+det(documentation-3, All-1)
+amod(documentation-3, supporting-2)
+nsubjpass(maintained-5, documentation-3)
+auxpass(maintained-5, is-4)
+case(Bank-9, by-6)
+compound(Bank-9, Capital-7)
+compound(Bank-9, One-8)
+nmod:agent(maintained-5, Bank-9)
+punct(USA-11, -LRB--10)
+appos(Bank-9, USA-11)
+punct(USA-11, -RRB--12)
+nsubj(Included-14, N.A.-13)
+acl:relcl(Bank-9, Included-14)
+case(B-17, in-15)
+compound(B-17, Section-16)
+nmod:in(Included-14, B-17)
+case(report-20, of-18)
+det(report-20, this-19)
+nmod:of(B-17, report-20)
+cop(sampling-23, is-21)
+det(sampling-23, a-22)
+ccomp(maintained-5, sampling-23)
+case(activity-26, of-24)
+amod(activity-26, transactional-25)
+nmod:of(sampling-23, activity-26)
+acl(activity-26, totaling-27)
+dep(30.03-29, $-28)
+dobj(totaling-27, 30.03-29)
+punct(maintained-5, .-30)
+
+------
+triple
+1.0	N.A.	Included in	Section B of report
+------
+triple
+1.0	N.A.	Included in	Section B
+------
+triple
+1.0	supporting documentation	is maintained by	USA
+------
+triple
+1.0	supporting documentation	is	maintained
+------
+triple
+1.0	supporting documentation	is maintained by	Capital One Bank
+root(ROOT-0, maintained-5)
+det(documentation-3, All-1)
+amod(documentation-3, supporting-2)
+nsubjpass(maintained-5, documentation-3)
+auxpass(maintained-5, is-4)
+case(Bank-9, by-6)
+compound(Bank-9, Capital-7)
+compound(Bank-9, One-8)
+nmod:agent(maintained-5, Bank-9)
+appos(Bank-9, USA-11)
+nsubj(Included-14, N.A.-13)
+acl:relcl(Bank-9, Included-14)
+case(B-17, in-15)
+compound(B-17, Section-16)
+nmod:in(Included-14, B-17)
+case(report-20, of-18)
+det(report-20, this-19)
+nmod:of(B-17, report-20)
+cop(sampling-23, is-21)
+det(sampling-23, a-22)
+ccomp(maintained-5, sampling-23)
+case(activity-26, of-24)
+amod(activity-26, transactional-25)
+nmod:of(sampling-23, activity-26)
+acl(activity-26, totaling-27)
+dep(30.03-29, $-28)
+dobj(totaling-27, 30.03-29)
+
+root(ROOT-0, sampling-23)
+cop(sampling-23, is-21)
+det(sampling-23, a-22)
+case(activity-26, of-24)
+amod(activity-26, transactional-25)
+nmod:of(sampling-23, activity-26)
+acl(activity-26, totaling-27)
+dep(30.03-29, $-28)
+dobj(totaling-27, 30.03-29)
+
+root(ROOT-0, Included-14)
+nsubj(Included-14, N.A.-13)
+case(B-17, in-15)
+compound(B-17, Section-16)
+nmod:in(Included-14, B-17)
+case(report-20, of-18)
+det(report-20, this-19)
+nmod:of(B-17, report-20)
+
+
+Sentence #13: The sample is drawn from transaction activity occurring from 5/12/2016  to 5/14/2016.
+root(ROOT-0, drawn-4)
+det(sample-2, The-1)
+nsubjpass(drawn-4, sample-2)
+auxpass(drawn-4, is-3)
+case(activity-7, from-5)
+compound(activity-7, transaction-6)
+nmod:from(drawn-4, activity-7)
+acl(activity-7, occurring-8)
+case(5/12/2016-10, from-9)
+nmod:from(occurring-8, 5/12/2016-10)
+case(5/14/2016-12, to-11)
+nmod:to(5/12/2016-10, 5/14/2016-12)
+punct(drawn-4, .-13)
+
+------
+triple
+1.0	sample	is drawn from	transaction activity
+------
+triple
+1.0	sample	is	drawn
+------
+triple
+1.0	sample	is drawn from	transaction activity occurring
+------
+triple
+1.0	sample	is drawn from	transaction activity occurring from 5/12/2016 to 5/14/2016
+root(ROOT-0, drawn-4)
+det(sample-2, The-1)
+nsubjpass(drawn-4, sample-2)
+auxpass(drawn-4, is-3)
+case(activity-7, from-5)
+compound(activity-7, transaction-6)
+nmod:from(drawn-4, activity-7)
+acl(activity-7, occurring-8)
+case(5/12/2016-10, from-9)
+nmod:from(occurring-8, 5/12/2016-10)
+case(5/14/2016-12, to-11)
+nmod:to(5/12/2016-10, 5/14/2016-12)
+
+
+Sentence #14: The sample includes one (1) fraudulent charge.
+root(ROOT-0, includes-3)
+det(sample-2, The-1)
+nsubj(includes-3, sample-2)
+nummod(charge-9, one-4)
+punct(charge-9, -LRB--5)
+nummod(charge-9, 1-6)
+punct(charge-9, -RRB--7)
+amod(charge-9, fraudulent-8)
+dobj(includes-3, charge-9)
+punct(includes-3, .-10)
+
+------
+triple
+1.0	sample	includes	one 1 charge
+------
+triple
+1.0	sample	includes	one 1 fraudulent charge
+root(ROOT-0, includes-3)
+det(sample-2, The-1)
+nsubj(includes-3, sample-2)
+nummod(charge-9, one-4)
+nummod(charge-9, 1-6)
+amod(charge-9, fraudulent-8)
+dobj(includes-3, charge-9)
+
+

@@ -1,0 +1,1547 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sentence #1: This report is connected to FINTRAC report number 123456789.
+root(ROOT-0, connected-4)
+det(report-2, This-1)
+nsubjpass(connected-4, report-2)
+auxpass(connected-4, is-3)
+case(number-8, to-5)
+compound(number-8, FINTRAC-6)
+compound(number-8, report-7)
+nmod:to(connected-4, number-8)
+nummod(number-8, 123456789-9)
+punct(connected-4, .-10)
+
+------
+triple
+1.0	report	is	connected
+------
+triple
+1.0	report	is connected to	FINTRAC report number 123456789
+root(ROOT-0, connected-4)
+det(report-2, This-1)
+nsubjpass(connected-4, report-2)
+auxpass(connected-4, is-3)
+case(number-8, to-5)
+compound(number-8, FINTRAC-6)
+compound(number-8, report-7)
+nmod:to(connected-4, number-8)
+nummod(number-8, 123456789-9)
+
+
+Sentence #2: This report is for the transactions occurred at Branch 10001.
+root(ROOT-0, transactions-6)
+det(report-2, This-1)
+nsubj(transactions-6, report-2)
+cop(transactions-6, is-3)
+case(transactions-6, for-4)
+det(transactions-6, the-5)
+acl(transactions-6, occurred-7)
+case(Branch-9, at-8)
+nmod:at(occurred-7, Branch-9)
+nummod(Branch-9, 10001-10)
+punct(transactions-6, .-11)
+
+------
+triple
+1.0	report	is for	transactions occurred at Branch 10001
+------
+triple
+1.0	report	is for	transactions
+------
+triple
+1.0	report	is for	transactions occurred
+root(ROOT-0, transactions-6)
+det(report-2, This-1)
+nsubj(transactions-6, report-2)
+cop(transactions-6, is-3)
+case(transactions-6, for-4)
+det(transactions-6, the-5)
+acl(transactions-6, occurred-7)
+case(Branch-9, at-8)
+nmod:at(occurred-7, Branch-9)
+nummod(Branch-9, 10001-10)
+
+
+Sentence #3: HBCA case C76768686567 reviewed the accounts of Jong CHEN.
+root(ROOT-0, reviewed-4)
+compound(C76768686567-3, HBCA-1)
+compound(C76768686567-3, case-2)
+nsubj(reviewed-4, C76768686567-3)
+det(accounts-6, the-5)
+dobj(reviewed-4, accounts-6)
+case(CHEN-9, of-7)
+compound(CHEN-9, Jong-8)
+nmod:of(accounts-6, CHEN-9)
+punct(reviewed-4, .-10)
+
+------
+triple
+1.0	HBCA case C76768686567	reviewed	accounts
+------
+triple
+1.0	HBCA case C76768686567	reviewed	accounts of Jong CHEN
+root(ROOT-0, reviewed-4)
+compound(C76768686567-3, HBCA-1)
+compound(C76768686567-3, case-2)
+nsubj(reviewed-4, C76768686567-3)
+det(accounts-6, the-5)
+dobj(reviewed-4, accounts-6)
+case(CHEN-9, of-7)
+compound(CHEN-9, Jong-8)
+nmod:of(accounts-6, CHEN-9)
+
+
+Sentence #4: Previous reviews of the clients resulted in STR-R166788765 (21Dec2016), STR-R999988876 (21Dec2016), STR-R877656789 (09Dec2018), being filed.
+root(ROOT-0, resulted-6)
+amod(reviews-2, Previous-1)
+nsubj(resulted-6, reviews-2)
+case(clients-5, of-3)
+det(clients-5, the-4)
+nmod:of(reviews-2, clients-5)
+mark(filed-24, in-7)
+nsubjpass(filed-24, STR-R166788765-8)
+punct(21Dec2016-10, -LRB--9)
+appos(STR-R166788765-8, 21Dec2016-10)
+punct(21Dec2016-10, -RRB--11)
+punct(STR-R166788765-8, ,-12)
+conj(STR-R166788765-8, STR-R999988876-13)
+punct(21Dec2016-15, -LRB--14)
+appos(STR-R999988876-13, 21Dec2016-15)
+punct(21Dec2016-15, -RRB--16)
+punct(STR-R166788765-8, ,-17)
+conj(STR-R166788765-8, STR-R877656789-18)
+punct(09Dec2018-20, -LRB--19)
+appos(STR-R877656789-18, 09Dec2018-20)
+punct(09Dec2018-20, -RRB--21)
+punct(STR-R166788765-8, ,-22)
+auxpass(filed-24, being-23)
+advcl:in(resulted-6, filed-24)
+punct(resulted-6, .-25)
+
+------
+triple
+1.0	STR-R166788765	being	filed
+------
+triple
+1.0	reviews	resulted	filed
+------
+triple
+1.0	Previous reviews	resulted	filed
+root(ROOT-0, resulted-6)
+amod(reviews-2, Previous-1)
+nsubj(resulted-6, reviews-2)
+case(clients-5, of-3)
+det(clients-5, the-4)
+nmod:of(reviews-2, clients-5)
+mark(filed-24, in-7)
+nsubjpass(filed-24, STR-R166788765-8)
+appos(STR-R166788765-8, 21Dec2016-10)
+conj(STR-R166788765-8, STR-R999988876-13)
+appos(STR-R999988876-13, 21Dec2016-15)
+conj(STR-R166788765-8, STR-R877656789-18)
+appos(STR-R877656789-18, 09Dec2018-20)
+auxpass(filed-24, being-23)
+advcl:in(resulted-6, filed-24)
+
+root(ROOT-0, filed-24)
+mark(filed-24, in-7)
+nsubjpass(filed-24, STR-R166788765-8)
+appos(STR-R166788765-8, 21Dec2016-10)
+conj(STR-R166788765-8, STR-R999988876-13)
+appos(STR-R999988876-13, 21Dec2016-15)
+conj(STR-R166788765-8, STR-R877656789-18)
+appos(STR-R877656789-18, 09Dec2018-20)
+auxpass(filed-24, being-23)
+
+
+Sentence #5: Investigation of HBCA client Jong CHEN identified a wire transfer from a third party individual that was used to facilitate multiple cash withdrawals.
+root(ROOT-0, identified-7)
+nsubj(identified-7, Investigation-1)
+case(CHEN-6, of-2)
+compound(CHEN-6, HBCA-3)
+compound(CHEN-6, client-4)
+compound(CHEN-6, Jong-5)
+nmod:of(Investigation-1, CHEN-6)
+det(transfer-10, a-8)
+compound(transfer-10, wire-9)
+dobj(identified-7, transfer-10)
+case(individual-15, from-11)
+det(individual-15, a-12)
+amod(individual-15, third-13)
+compound(individual-15, party-14)
+nmod:from(transfer-10, individual-15)
+nsubjpass(used-18, individual-15)
+nsubj:xsubj(facilitate-20, individual-15)
+ref(individual-15, that-16)
+auxpass(used-18, was-17)
+acl:relcl(individual-15, used-18)
+mark(facilitate-20, to-19)
+xcomp(used-18, facilitate-20)
+amod(withdrawals-23, multiple-21)
+compound(withdrawals-23, cash-22)
+dobj(facilitate-20, withdrawals-23)
+punct(identified-7, .-24)
+
+------
+triple
+1.0	Investigation	identified	wire transfer from party individual
+------
+triple
+1.0	Investigation	identified	wire transfer from third party individual
+------
+triple
+1.0	Investigation	identified	wire transfer
+root(ROOT-0, identified-7)
+nsubj(identified-7, Investigation-1)
+case(CHEN-6, of-2)
+compound(CHEN-6, HBCA-3)
+compound(CHEN-6, client-4)
+compound(CHEN-6, Jong-5)
+nmod:of(Investigation-1, CHEN-6)
+det(transfer-10, a-8)
+compound(transfer-10, wire-9)
+dobj(identified-7, transfer-10)
+case(individual-15, from-11)
+det(individual-15, a-12)
+amod(individual-15, third-13)
+compound(individual-15, party-14)
+nmod:from(transfer-10, individual-15)
+ref(individual-15, that-16)
+auxpass(used-18, was-17)
+acl:relcl(individual-15, used-18)
+mark(facilitate-20, to-19)
+xcomp(used-18, facilitate-20)
+amod(withdrawals-23, multiple-21)
+compound(withdrawals-23, cash-22)
+dobj(facilitate-20, withdrawals-23)
+
+root(ROOT-0, used-18)
+case(individual-15, from-11)
+det(individual-15, a-12)
+amod(individual-15, third-13)
+compound(individual-15, party-14)
+nsubjpass(used-18, individual-15)
+ref(individual-15, that-16)
+auxpass(used-18, was-17)
+mark(facilitate-20, to-19)
+xcomp(used-18, facilitate-20)
+amod(withdrawals-23, multiple-21)
+compound(withdrawals-23, cash-22)
+dobj(facilitate-20, withdrawals-23)
+
+root(ROOT-0, facilitate-20)
+case(individual-15, from-11)
+det(individual-15, a-12)
+amod(individual-15, third-13)
+compound(individual-15, party-14)
+nsubj:xsubj(facilitate-20, individual-15)
+ref(individual-15, that-16)
+auxpass(used-18, was-17)
+acl:relcl(individual-15, used-18)
+amod(withdrawals-23, multiple-21)
+compound(withdrawals-23, cash-22)
+dobj(facilitate-20, withdrawals-23)
+
+
+Sentence #6: A continuation of previously reported activity was observed.
+root(ROOT-0, observed-8)
+det(continuation-2, A-1)
+nsubjpass(observed-8, continuation-2)
+case(activity-6, of-3)
+advmod(reported-5, previously-4)
+amod(activity-6, reported-5)
+nmod:of(continuation-2, activity-6)
+auxpass(observed-8, was-7)
+punct(observed-8, .-9)
+
+------
+triple
+1.0	continuation	was	observed
+root(ROOT-0, observed-8)
+det(continuation-2, A-1)
+nsubjpass(observed-8, continuation-2)
+case(activity-6, of-3)
+advmod(reported-5, previously-4)
+amod(activity-6, reported-5)
+nmod:of(continuation-2, activity-6)
+auxpass(observed-8, was-7)
+
+
+Sentence #7: Memo on the wire also conflicts with observed activity.
+root(ROOT-0, conflicts-6)
+nsubj(conflicts-6, Memo-1)
+case(wire-4, on-2)
+det(wire-4, the-3)
+nmod:on(Memo-1, wire-4)
+advmod(conflicts-6, also-5)
+case(activity-9, with-7)
+amod(activity-9, observed-8)
+nmod:with(conflicts-6, activity-9)
+punct(conflicts-6, .-10)
+
+------
+triple
+1.0	Memo	conflicts with	activity
+------
+triple
+1.0	Memo	conflicts with	observed activity
+------
+triple
+1.0	Memo conflicts	is with	observed activity
+------
+triple
+1.0	Memo	also conflicts with	activity
+------
+triple
+1.0	Memo	also conflicts with	observed activity
+root(ROOT-0, conflicts-6)
+nsubj(conflicts-6, Memo-1)
+case(wire-4, on-2)
+det(wire-4, the-3)
+nmod:on(Memo-1, wire-4)
+advmod(conflicts-6, also-5)
+case(activity-9, with-7)
+amod(activity-9, observed-8)
+nmod:with(conflicts-6, activity-9)
+
+
+Sentence #8: As such, there are reasonable grounds to suspect the activity as being a money laundering offence.
+root(ROOT-0, are-5)
+case(such-2, As-1)
+nmod:as(are-5, such-2)
+punct(are-5, ,-3)
+expl(are-5, there-4)
+amod(grounds-7, reasonable-6)
+nsubj(are-5, grounds-7)
+mark(suspect-9, to-8)
+acl:to(grounds-7, suspect-9)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+mark(offence-17, as-12)
+cop(offence-17, being-13)
+det(offence-17, a-14)
+compound(offence-17, money-15)
+compound(offence-17, laundering-16)
+advcl:as(suspect-9, offence-17)
+punct(are-5, .-18)
+
+------
+triple
+0.8945105432672943	grounds	suspect activity	money laundering offence
+------
+triple
+0.8945105432672943	grounds	suspect	activity
+------
+triple
+0.8945105432672943	reasonable grounds	suspect activity	money laundering offence
+------
+triple
+0.8945105432672943	reasonable grounds	suspect	activity
+root(ROOT-0, are-5)
+case(such-2, As-1)
+nmod:as(are-5, such-2)
+expl(are-5, there-4)
+amod(grounds-7, reasonable-6)
+nsubj(are-5, grounds-7)
+mark(suspect-9, to-8)
+acl:to(grounds-7, suspect-9)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+mark(offence-17, as-12)
+cop(offence-17, being-13)
+det(offence-17, a-14)
+compound(offence-17, money-15)
+compound(offence-17, laundering-16)
+advcl:as(suspect-9, offence-17)
+
+root(ROOT-0, suspect-9)
+amod(grounds-7, reasonable-6)
+nsubjpass(suspect-9, grounds-7)
+mark(suspect-9, to-8)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+mark(offence-17, as-12)
+cop(offence-17, being-13)
+det(offence-17, a-14)
+compound(offence-17, money-15)
+compound(offence-17, laundering-16)
+advcl:as(suspect-9, offence-17)
+
+root(ROOT-0, offence-17)
+mark(offence-17, as-12)
+cop(offence-17, being-13)
+det(offence-17, a-14)
+compound(offence-17, money-15)
+compound(offence-17, laundering-16)
+
+
+Sentence #9: According to HBCA records, Jong CHEN, (Customer #: 100-123456), has been a HBCA customer since 14Jul2009.
+root(ROOT-0, customer-20)
+case(records-4, According-1)
+mwe(According-1, to-2)
+compound(records-4, HBCA-3)
+nmod:according_to(customer-20, records-4)
+punct(customer-20, ,-5)
+compound(CHEN-7, Jong-6)
+nsubj(customer-20, CHEN-7)
+punct(CHEN-7, ,-8)
+punct(Customer-10, -LRB--9)
+appos(CHEN-7, Customer-10)
+dep(100-123456-13, #-11)
+punct(100-123456-13, :-12)
+dep(Customer-10, 100-123456-13)
+punct(Customer-10, -RRB--14)
+punct(CHEN-7, ,-15)
+aux(customer-20, has-16)
+cop(customer-20, been-17)
+det(customer-20, a-18)
+compound(customer-20, HBCA-19)
+case(14Jul2009-22, since-21)
+nmod:since(customer-20, 14Jul2009-22)
+punct(customer-20, .-23)
+
+------
+triple
+1.0	Jong CHEN	has	has HBCA customer
+------
+triple
+1.0	Jong CHEN	has	has HBCA customer since 14Jul2009
+root(ROOT-0, customer-20)
+case(records-4, According-1)
+mwe(According-1, to-2)
+compound(records-4, HBCA-3)
+nmod:according_to(customer-20, records-4)
+compound(CHEN-7, Jong-6)
+nsubj(customer-20, CHEN-7)
+appos(CHEN-7, Customer-10)
+dep(100-123456-13, #-11)
+dep(Customer-10, 100-123456-13)
+aux(customer-20, has-16)
+cop(customer-20, been-17)
+det(customer-20, a-18)
+compound(customer-20, HBCA-19)
+case(14Jul2009-22, since-21)
+nmod:since(customer-20, 14Jul2009-22)
+
+
+Sentence #10: Jong CHEN (Preferred name: John) is 28 years old, (DOB: 24Jan1992), Male.
+root(ROOT-0, old-12)
+compound(CHEN-2, Jong-1)
+nsubj(old-12, CHEN-2)
+punct(name-5, -LRB--3)
+compound(name-5, Preferred-4)
+appos(CHEN-2, name-5)
+punct(name-5, :-6)
+dep(name-5, John-7)
+punct(name-5, -RRB--8)
+cop(old-12, is-9)
+nummod(years-11, 28-10)
+nmod:npmod(old-12, years-11)
+punct(old-12, ,-13)
+punct(DOB-15, -LRB--14)
+dep(old-12, DOB-15)
+punct(DOB-15, :-16)
+dep(DOB-15, 24Jan1992-17)
+punct(DOB-15, -RRB--18)
+punct(old-12, ,-19)
+dep(old-12, Male-20)
+punct(old-12, .-21)
+
+------
+triple
+1.0	Jong CHEN	is old	28 years
+------
+triple
+1.0	Jong CHEN	is	old
+root(ROOT-0, old-12)
+compound(CHEN-2, Jong-1)
+nsubj(old-12, CHEN-2)
+compound(name-5, Preferred-4)
+appos(CHEN-2, name-5)
+dep(name-5, John-7)
+cop(old-12, is-9)
+nummod(years-11, 28-10)
+nmod:npmod(old-12, years-11)
+dep(old-12, DOB-15)
+dep(DOB-15, 24Jan1992-17)
+dep(old-12, Male-20)
+
+
+Sentence #11: Client is assigned, Canadian/Foreign Passport, #E88643226 issued in China.
+root(ROOT-0, assigned-3)
+nsubjpass(assigned-3, Client-1)
+auxpass(assigned-3, is-2)
+punct(assigned-3, ,-4)
+compound(Passport-6, Canadian/Foreign-5)
+dobj(assigned-3, Passport-6)
+punct(Passport-6, ,-7)
+appos(Passport-6, #E88643226-8)
+acl(#E88643226-8, issued-9)
+case(China-11, in-10)
+nmod:in(issued-9, China-11)
+punct(assigned-3, .-12)
+
+------
+triple
+1.0	Client	is assigned	#E88643226 issued in China
+------
+triple
+0.7460775242348211	#E88643226	issued in	China
+------
+triple
+1.0	Client	is assigned	#E88643226
+------
+triple
+1.0	Client	is assigned	#E88643226 issued
+------
+triple
+1.0	Client	is assigned	Canadian/Foreign Passport
+root(ROOT-0, assigned-3)
+nsubjpass(assigned-3, Client-1)
+auxpass(assigned-3, is-2)
+compound(Passport-6, Canadian/Foreign-5)
+dobj(assigned-3, Passport-6)
+appos(Passport-6, #E88643226-8)
+acl(#E88643226-8, issued-9)
+case(China-11, in-10)
+nmod:in(issued-9, China-11)
+
+root(ROOT-0, issued-9)
+nsubjpass(issued-9, #E88643226-8)
+case(China-11, in-10)
+nmod:in(issued-9, China-11)
+
+
+Sentence #12: Clients file notes country of citizenship and country of birth is China, country of residence is Canada, country of origin information is not listed.
+root(ROOT-0, China-12)
+nsubj(file-2, Clients-1)
+csubj(China-12, file-2)
+compound(country-4, notes-3)
+dobj(file-2, country-4)
+case(citizenship-6, of-5)
+nmod:of(country-4, citizenship-6)
+cc(citizenship-6, and-7)
+nmod:of(country-4, country-8)
+conj:and(citizenship-6, country-8)
+case(birth-10, of-9)
+nmod:of(citizenship-6, birth-10)
+cop(China-12, is-11)
+punct(China-12, ,-13)
+nsubj(Canada-18, country-14)
+case(residence-16, of-15)
+nmod:of(country-14, residence-16)
+cop(Canada-18, is-17)
+nsubjpass(listed-26, Canada-18)
+punct(Canada-18, ,-19)
+appos(Canada-18, country-20)
+case(information-23, of-21)
+compound(information-23, origin-22)
+nmod:of(country-20, information-23)
+auxpass(listed-26, is-24)
+neg(listed-26, not-25)
+acl:relcl(China-12, listed-26)
+punct(China-12, .-27)
+
+------
+triple
+0.6771001269810216	country	country of	origin information
+------
+triple
+1.0	Clients	file	notes country of citizenship of birth
+------
+triple
+1.0	Clients	file	notes country
+------
+triple
+1.0	Clients	file	notes country of citizenship
+------
+triple
+1.0	Canada	country of	origin information
+root(ROOT-0, China-12)
+nsubj(file-2, Clients-1)
+csubj(China-12, file-2)
+compound(country-4, notes-3)
+dobj(file-2, country-4)
+case(citizenship-6, of-5)
+nmod:of(country-4, citizenship-6)
+cc(citizenship-6, and-7)
+conj:and(citizenship-6, country-8)
+case(birth-10, of-9)
+nmod:of(citizenship-6, birth-10)
+cop(China-12, is-11)
+nsubj(Canada-18, country-14)
+case(residence-16, of-15)
+nmod:of(country-14, residence-16)
+cop(Canada-18, is-17)
+nsubjpass(listed-26, Canada-18)
+appos(Canada-18, country-20)
+case(information-23, of-21)
+compound(information-23, origin-22)
+nmod:of(country-20, information-23)
+auxpass(listed-26, is-24)
+neg(listed-26, not-25)
+acl:relcl(China-12, listed-26)
+
+root(ROOT-0, file-2)
+nsubj(file-2, Clients-1)
+compound(country-4, notes-3)
+dobj(file-2, country-4)
+case(citizenship-6, of-5)
+nmod:of(country-4, citizenship-6)
+cc(citizenship-6, and-7)
+conj:and(citizenship-6, country-8)
+case(birth-10, of-9)
+nmod:of(citizenship-6, birth-10)
+
+root(ROOT-0, listed-26)
+nsubj(Canada-18, country-14)
+case(residence-16, of-15)
+nmod:of(country-14, residence-16)
+cop(Canada-18, is-17)
+nsubjpass(listed-26, Canada-18)
+appos(Canada-18, country-20)
+case(information-23, of-21)
+compound(information-23, origin-22)
+nmod:of(country-20, information-23)
+auxpass(listed-26, is-24)
+neg(listed-26, not-25)
+
+root(ROOT-0, country-20)
+nsubj(country-20, country-14)
+case(residence-16, of-15)
+nmod:of(country-14, residence-16)
+case(information-23, of-21)
+compound(information-23, origin-22)
+nmod:of(country-20, information-23)
+
+root(ROOT-0, country-8)
+
+root(ROOT-0, country-4)
+nsubj(country-4, Clients-1)
+compound(country-4, notes-3)
+case(citizenship-6, of-5)
+nmod:of(country-4, citizenship-6)
+cc(citizenship-6, and-7)
+conj:and(citizenship-6, country-8)
+case(birth-10, of-9)
+nmod:of(citizenship-6, birth-10)
+
+
+Sentence #13: The associated addresses on file are:
+Home Address: 133 YOUNGE ST  Toronto ON M0G7V8, Canada.
+root(ROOT-0, Address-9)
+det(addresses-3, The-1)
+amod(addresses-3, associated-2)
+nsubj(Address-9, addresses-3)
+case(file-5, on-4)
+nmod:on(addresses-3, file-5)
+cop(Address-9, are-6)
+punct(Address-9, :-7)
+compound(Address-9, Home-8)
+punct(Address-9, :-10)
+nummod(Toronto-14, 133-11)
+compound(Toronto-14, YOUNGE-12)
+amod(Toronto-14, ST-13)
+dep(Address-9, Toronto-14)
+case(M0G7V8-16, ON-15)
+nmod:on(Toronto-14, M0G7V8-16)
+punct(M0G7V8-16, ,-17)
+appos(M0G7V8-16, Canada-18)
+punct(Address-9, .-19)
+
+------
+triple
+1.0	addresses	are	Home Address
+------
+triple
+1.0	associated addresses	are	Home Address
+root(ROOT-0, Address-9)
+det(addresses-3, The-1)
+amod(addresses-3, associated-2)
+nsubj(Address-9, addresses-3)
+case(file-5, on-4)
+nmod:on(addresses-3, file-5)
+cop(Address-9, are-6)
+compound(Address-9, Home-8)
+nummod(Toronto-14, 133-11)
+compound(Toronto-14, YOUNGE-12)
+amod(Toronto-14, ST-13)
+dep(Address-9, Toronto-14)
+case(M0G7V8-16, ON-15)
+nmod:on(Toronto-14, M0G7V8-16)
+appos(M0G7V8-16, Canada-18)
+
+
+Sentence #14: Previous Address: 18 STRANDHURST COURT Barrie ON L7F4L1, Canada.
+root(ROOT-0, Address-2)
+amod(Address-2, Previous-1)
+punct(Address-2, :-3)
+nummod(L7F4L1-9, 18-4)
+compound(L7F4L1-9, STRANDHURST-5)
+compound(L7F4L1-9, COURT-6)
+compound(L7F4L1-9, Barrie-7)
+compound(L7F4L1-9, ON-8)
+dep(Address-2, L7F4L1-9)
+punct(L7F4L1-9, ,-10)
+appos(L7F4L1-9, Canada-11)
+punct(Address-2, .-12)
+
+root(ROOT-0, Address-2)
+amod(Address-2, Previous-1)
+nummod(L7F4L1-9, 18-4)
+compound(L7F4L1-9, STRANDHURST-5)
+compound(L7F4L1-9, COURT-6)
+compound(L7F4L1-9, Barrie-7)
+compound(L7F4L1-9, ON-8)
+dep(Address-2, L7F4L1-9)
+appos(L7F4L1-9, Canada-11)
+
+
+Sentence #15: Client's employment status is student with an occupation of Student.
+root(ROOT-0, student-6)
+nmod:poss(status-4, Client-1)
+case(Client-1, 's-2)
+compound(status-4, employment-3)
+nsubj(student-6, status-4)
+cop(student-6, is-5)
+case(occupation-9, with-7)
+det(occupation-9, an-8)
+nmod:with(student-6, occupation-9)
+case(Student-11, of-10)
+nmod:of(occupation-9, Student-11)
+punct(student-6, .-12)
+
+------
+triple
+1.0	Client	has	employment status
+------
+triple
+1.0	student	is with	occupation of Student
+------
+triple
+1.0	Client 's employment status	is student with	occupation of Student
+------
+triple
+1.0	Client 's employment status	is student with	occupation
+------
+triple
+1.0	Client 's employment status	is	student
+root(ROOT-0, student-6)
+nmod:poss(status-4, Client-1)
+case(Client-1, 's-2)
+compound(status-4, employment-3)
+nsubj(student-6, status-4)
+cop(student-6, is-5)
+case(occupation-9, with-7)
+det(occupation-9, an-8)
+nmod:with(student-6, occupation-9)
+case(Student-11, of-10)
+nmod:of(occupation-9, Student-11)
+
+
+Sentence #16: No income information available on record.
+root(ROOT-0, information-3)
+neg(information-3, No-1)
+compound(information-3, income-2)
+amod(information-3, available-4)
+case(record-6, on-5)
+nmod:on(available-4, record-6)
+punct(information-3, .-7)
+
+root(ROOT-0, information-3)
+neg(information-3, No-1)
+compound(information-3, income-2)
+amod(information-3, available-4)
+case(record-6, on-5)
+nmod:on(available-4, record-6)
+
+
+Sentence #17: No previous employment details available.
+root(ROOT-0, details-4)
+neg(details-4, No-1)
+amod(details-4, previous-2)
+compound(details-4, employment-3)
+amod(details-4, available-5)
+punct(details-4, .-6)
+
+root(ROOT-0, details-4)
+neg(details-4, No-1)
+amod(details-4, previous-2)
+compound(details-4, employment-3)
+amod(details-4, available-5)
+
+
+Sentence #18: Investigation of account #111-111111-123 identified multiple cash withdrawals (total of CAD 30,200.00) that were mainly funded by two incoming wire transfers from a third party individual; Jackie CHEN (total of CAD 45,300.00).
+root(ROOT-0, Investigation-1)
+nsubjpass(funded-19, Investigation-1)
+case(account-3, of-2)
+nmod:of(Investigation-1, account-3)
+compound(withdrawals-9, #-4)
+nummod(withdrawals-9, 111-111111-123-5)
+amod(withdrawals-9, identified-6)
+amod(withdrawals-9, multiple-7)
+compound(withdrawals-9, cash-8)
+dep(account-3, withdrawals-9)
+punct(total-11, -LRB--10)
+dep(withdrawals-9, total-11)
+case(CAD-13, of-12)
+nmod:of(total-11, CAD-13)
+nummod(CAD-13, 30,200.00-14)
+punct(total-11, -RRB--15)
+ref(Investigation-1, that-16)
+auxpass(funded-19, were-17)
+advmod(funded-19, mainly-18)
+acl:relcl(Investigation-1, funded-19)
+case(transfers-24, by-20)
+nummod(transfers-24, two-21)
+amod(transfers-24, incoming-22)
+compound(transfers-24, wire-23)
+nmod:agent(funded-19, transfers-24)
+case(individual-29, from-25)
+det(individual-29, a-26)
+amod(individual-29, third-27)
+compound(individual-29, party-28)
+nmod:from(transfers-24, individual-29)
+punct(Investigation-1, ;-30)
+compound(CHEN-32, Jackie-31)
+dep(Investigation-1, CHEN-32)
+punct(total-34, -LRB--33)
+dep(CHEN-32, total-34)
+case(CAD-36, of-35)
+nmod:of(total-34, CAD-36)
+nummod(CAD-36, 45,300.00-37)
+punct(total-34, -RRB--38)
+punct(Investigation-1, .-39)
+
+root(ROOT-0, Investigation-1)
+case(account-3, of-2)
+nmod:of(Investigation-1, account-3)
+compound(withdrawals-9, #-4)
+nummod(withdrawals-9, 111-111111-123-5)
+amod(withdrawals-9, identified-6)
+amod(withdrawals-9, multiple-7)
+compound(withdrawals-9, cash-8)
+dep(account-3, withdrawals-9)
+dep(withdrawals-9, total-11)
+case(CAD-13, of-12)
+nmod:of(total-11, CAD-13)
+nummod(CAD-13, 30,200.00-14)
+ref(Investigation-1, that-16)
+auxpass(funded-19, were-17)
+advmod(funded-19, mainly-18)
+acl:relcl(Investigation-1, funded-19)
+case(transfers-24, by-20)
+nummod(transfers-24, two-21)
+amod(transfers-24, incoming-22)
+compound(transfers-24, wire-23)
+nmod:agent(funded-19, transfers-24)
+case(individual-29, from-25)
+det(individual-29, a-26)
+amod(individual-29, third-27)
+compound(individual-29, party-28)
+nmod:from(transfers-24, individual-29)
+compound(CHEN-32, Jackie-31)
+dep(Investigation-1, CHEN-32)
+dep(CHEN-32, total-34)
+case(CAD-36, of-35)
+nmod:of(total-34, CAD-36)
+nummod(CAD-36, 45,300.00-37)
+
+root(ROOT-0, funded-19)
+auxpass(funded-19, were-17)
+advmod(funded-19, mainly-18)
+case(transfers-24, by-20)
+nummod(transfers-24, two-21)
+amod(transfers-24, incoming-22)
+compound(transfers-24, wire-23)
+nmod:agent(funded-19, transfers-24)
+case(individual-29, from-25)
+det(individual-29, a-26)
+amod(individual-29, third-27)
+compound(individual-29, party-28)
+nmod:from(transfers-24, individual-29)
+
+
+Sentence #19: While it is reasonable to infer that the remitter has familial ties to the client, the activity appears to be a continuation of previous reported activity.
+root(ROOT-0, reasonable-4)
+mark(reasonable-4, While-1)
+nsubj(reasonable-4, it-2)
+nsubj:xsubj(infer-6, it-2)
+cop(reasonable-4, is-3)
+mark(infer-6, to-5)
+xcomp(reasonable-4, infer-6)
+mark(has-10, that-7)
+det(remitter-9, the-8)
+nsubj(has-10, remitter-9)
+ccomp(infer-6, has-10)
+amod(ties-12, familial-11)
+dobj(has-10, ties-12)
+case(client-15, to-13)
+det(client-15, the-14)
+nmod:to(ties-12, client-15)
+punct(has-10, ,-16)
+det(activity-18, the-17)
+nsubj(appears-19, activity-18)
+nsubj:xsubj(continuation-23, activity-18)
+parataxis(has-10, appears-19)
+mark(continuation-23, to-20)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+xcomp(appears-19, continuation-23)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+punct(reasonable-4, .-28)
+
+------
+triple
+1.0	activity	appears	continuation of activity
+------
+triple
+1.0	remitter	has	ties
+------
+triple
+1.0	activity	be continuation of	activity
+------
+triple
+1.0	activity	be continuation of	previous reported activity
+------
+triple
+1.0	remitter	has	familial ties
+------
+triple
+1.0	remitter	has	ties to client
+------
+triple
+1.0	it	is	reasonable
+------
+triple
+1.0	activity	appears	continuation
+------
+triple
+1.0	activity	appears	continuation of reported activity
+------
+triple
+1.0	remitter	has	familial ties to client
+------
+triple
+1.0	activity	appears	continuation of previous activity
+------
+triple
+1.0	activity	be continuation of	previous activity
+------
+triple
+1.0	activity	be continuation of	reported activity
+------
+triple
+1.0	activity	appears	continuation of previous reported activity
+------
+triple
+1.0	activity	be	continuation
+root(ROOT-0, reasonable-4)
+mark(reasonable-4, While-1)
+nsubj(reasonable-4, it-2)
+cop(reasonable-4, is-3)
+mark(infer-6, to-5)
+xcomp(reasonable-4, infer-6)
+mark(has-10, that-7)
+det(remitter-9, the-8)
+nsubj(has-10, remitter-9)
+ccomp(infer-6, has-10)
+amod(ties-12, familial-11)
+dobj(has-10, ties-12)
+case(client-15, to-13)
+det(client-15, the-14)
+nmod:to(ties-12, client-15)
+det(activity-18, the-17)
+nsubj(appears-19, activity-18)
+parataxis(has-10, appears-19)
+mark(continuation-23, to-20)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+xcomp(appears-19, continuation-23)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+
+root(ROOT-0, infer-6)
+nsubj(infer-6, it-2)
+mark(has-10, that-7)
+det(remitter-9, the-8)
+nsubj(has-10, remitter-9)
+ccomp(infer-6, has-10)
+amod(ties-12, familial-11)
+dobj(has-10, ties-12)
+case(client-15, to-13)
+det(client-15, the-14)
+nmod:to(ties-12, client-15)
+det(activity-18, the-17)
+nsubj(appears-19, activity-18)
+parataxis(has-10, appears-19)
+mark(continuation-23, to-20)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+xcomp(appears-19, continuation-23)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+
+root(ROOT-0, has-10)
+det(remitter-9, the-8)
+nsubj(has-10, remitter-9)
+amod(ties-12, familial-11)
+dobj(has-10, ties-12)
+case(client-15, to-13)
+det(client-15, the-14)
+nmod:to(ties-12, client-15)
+det(activity-18, the-17)
+nsubj(appears-19, activity-18)
+parataxis(has-10, appears-19)
+mark(continuation-23, to-20)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+xcomp(appears-19, continuation-23)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+
+root(ROOT-0, appears-19)
+det(activity-18, the-17)
+nsubj(appears-19, activity-18)
+mark(continuation-23, to-20)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+xcomp(appears-19, continuation-23)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+
+root(ROOT-0, continuation-23)
+det(activity-18, the-17)
+nsubj(continuation-23, activity-18)
+cop(continuation-23, be-21)
+det(continuation-23, a-22)
+case(activity-27, of-24)
+amod(activity-27, previous-25)
+amod(activity-27, reported-26)
+nmod:of(continuation-23, activity-27)
+
+
+Sentence #20: According to previous correspondence, client noted that he?s being funded by his parents for overseas study.
+root(ROOT-0, noted-7)
+case(correspondence-4, According-1)
+mwe(According-1, to-2)
+amod(correspondence-4, previous-3)
+nmod:according_to(noted-7, correspondence-4)
+punct(noted-7, ,-5)
+nsubj(noted-7, client-6)
+mark(funded-11, that-8)
+nsubjpass(funded-11, he?s-9)
+auxpass(funded-11, being-10)
+ccomp(noted-7, funded-11)
+case(parents-14, by-12)
+nmod:poss(parents-14, his-13)
+nmod:agent(funded-11, parents-14)
+case(study-17, for-15)
+amod(study-17, overseas-16)
+nmod:for(funded-11, study-17)
+punct(noted-7, .-18)
+
+------
+triple
+1.0	he?s	being	funded
+------
+triple
+1.0	he?s	being	funded by his parents for study
+------
+triple
+1.0	client	noted According to	previous correspondence
+------
+triple
+1.0	he?s	being funded for	study
+------
+triple
+1.0	he?s	being funded for	overseas study
+------
+triple
+1.0	client	noted According to	correspondence
+------
+triple
+1.0	he?s	being	funded by his parents for overseas study
+------
+triple
+1.0	he?s	being funded by	his parents
+root(ROOT-0, noted-7)
+case(correspondence-4, According-1)
+mwe(According-1, to-2)
+amod(correspondence-4, previous-3)
+nmod:according_to(noted-7, correspondence-4)
+nsubj(noted-7, client-6)
+mark(funded-11, that-8)
+nsubjpass(funded-11, he?s-9)
+auxpass(funded-11, being-10)
+ccomp(noted-7, funded-11)
+case(parents-14, by-12)
+nmod:poss(parents-14, his-13)
+nmod:agent(funded-11, parents-14)
+case(study-17, for-15)
+amod(study-17, overseas-16)
+nmod:for(funded-11, study-17)
+
+root(ROOT-0, funded-11)
+nsubjpass(funded-11, he?s-9)
+auxpass(funded-11, being-10)
+case(parents-14, by-12)
+nmod:poss(parents-14, his-13)
+nmod:agent(funded-11, parents-14)
+case(study-17, for-15)
+amod(study-17, overseas-16)
+nmod:for(funded-11, study-17)
+
+
+Sentence #21: However, source of funds remains unverified and the cash withdrawals were rapidly depleted in separate occasions at different branch locations; indicative of flow through.
+root(ROOT-0, remains-6)
+advmod(remains-6, However-1)
+punct(remains-6, ,-2)
+nsubj(remains-6, source-3)
+case(funds-5, of-4)
+nmod:of(source-3, funds-5)
+nsubjpass(depleted-14, unverified-7)
+cc(unverified-7, and-8)
+det(withdrawals-11, the-9)
+compound(withdrawals-11, cash-10)
+conj:and(unverified-7, withdrawals-11)
+nsubjpass(depleted-14, withdrawals-11)
+auxpass(depleted-14, were-12)
+advmod(depleted-14, rapidly-13)
+xcomp(remains-6, depleted-14)
+case(occasions-17, in-15)
+amod(occasions-17, separate-16)
+nmod:in(depleted-14, occasions-17)
+case(locations-21, at-18)
+amod(locations-21, different-19)
+compound(locations-21, branch-20)
+nmod:at(depleted-14, locations-21)
+punct(depleted-14, ;-22)
+dep(depleted-14, indicative-23)
+case(flow-25, of-24)
+nmod:of(indicative-23, flow-25)
+advmod(indicative-23, through-26)
+punct(remains-6, .-27)
+
+------
+triple
+1.0	source	However remains	rapidly depleted in separate occasions at different branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted
+------
+triple
+1.0	source	remains	depleted
+------
+triple
+1.0	source	remains	depleted in separate occasions
+------
+triple
+1.0	unverified	were	depleted at different branch locations
+------
+triple
+1.0	unverified	were	depleted in occasions at different branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted in occasions at branch locations
+------
+triple
+1.0	source	However remains	depleted at branch locations
+------
+triple
+1.0	source	However remains	rapidly depleted in occasions
+------
+triple
+1.0	source	However remains	rapidly depleted in separate occasions
+------
+triple
+1.0	source	However remains	depleted in separate occasions
+------
+triple
+1.0	source	However remains	depleted in occasions at different branch locations
+------
+triple
+1.0	source	However remains	depleted in occasions at branch locations
+------
+triple
+1.0	source	remains	depleted at branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted in occasions at different branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted in separate occasions
+------
+triple
+1.0	source	remains	rapidly depleted in occasions at branch locations
+------
+triple
+1.0	source	remains	rapidly depleted in separate occasions at different branch locations
+------
+triple
+1.0	source	However remains	depleted in separate occasions at branch locations
+------
+triple
+1.0	unverified	were	depleted in separate occasions at branch locations
+------
+triple
+1.0	source	remains	depleted in occasions at branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted at different branch locations
+------
+triple
+1.0	source	remains	rapidly depleted in separate occasions
+------
+triple
+1.0	source	remains	rapidly depleted at branch locations
+------
+triple
+1.0	source	However remains	rapidly depleted in separate occasions at branch locations
+------
+triple
+1.0	unverified	were	depleted in occasions at branch locations
+------
+triple
+1.0	unverified	were	depleted in separate occasions
+------
+triple
+1.0	source	remains	rapidly depleted in separate occasions at branch locations
+------
+triple
+1.0	source	remains	rapidly depleted in occasions at different branch locations
+------
+triple
+1.0	source	However remains	depleted in separate occasions at different branch locations
+------
+triple
+1.0	source	remains	rapidly depleted
+------
+triple
+1.0	source	remains	depleted in occasions at different branch locations
+------
+triple
+1.0	source	remains	rapidly depleted at different branch locations
+------
+triple
+1.0	source	However remains	rapidly depleted at different branch locations
+------
+triple
+1.0	source	However remains	rapidly depleted in occasions at different branch locations
+------
+triple
+1.0	source	However remains	depleted in occasions
+------
+triple
+1.0	source	remains	rapidly depleted in occasions
+------
+triple
+1.0	unverified	were	rapidly depleted at branch locations
+------
+triple
+1.0	source	However remains	rapidly depleted at branch locations
+------
+triple
+1.0	source	remains	depleted in occasions
+------
+triple
+1.0	source	However remains	depleted
+------
+triple
+1.0	source	However remains	rapidly depleted
+------
+triple
+1.0	unverified	were	depleted at branch locations
+------
+triple
+1.0	unverified	were	depleted in occasions
+------
+triple
+1.0	unverified	were	depleted in separate occasions at different branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted in separate occasions at branch locations
+------
+triple
+1.0	source	However remains	depleted at different branch locations
+------
+triple
+1.0	unverified	were	depleted
+------
+triple
+1.0	source	However remains	rapidly depleted in occasions at branch locations
+------
+triple
+1.0	source	remains	depleted at different branch locations
+------
+triple
+1.0	unverified	were	rapidly depleted in occasions
+------
+triple
+1.0	unverified	were	rapidly depleted in separate occasions at different branch locations
+------
+triple
+1.0	source	remains	depleted in separate occasions at branch locations
+------
+triple
+1.0	source	remains	depleted in separate occasions at different branch locations
+root(ROOT-0, remains-6)
+advmod(remains-6, However-1)
+nsubj(remains-6, source-3)
+case(funds-5, of-4)
+nmod:of(source-3, funds-5)
+nsubjpass(depleted-14, unverified-7)
+cc(unverified-7, and-8)
+det(withdrawals-11, the-9)
+compound(withdrawals-11, cash-10)
+nsubjpass(depleted-14, withdrawals-11)
+auxpass(depleted-14, were-12)
+advmod(depleted-14, rapidly-13)
+xcomp(remains-6, depleted-14)
+case(occasions-17, in-15)
+amod(occasions-17, separate-16)
+nmod:in(depleted-14, occasions-17)
+case(locations-21, at-18)
+amod(locations-21, different-19)
+compound(locations-21, branch-20)
+nmod:at(depleted-14, locations-21)
+dep(depleted-14, indicative-23)
+case(flow-25, of-24)
+nmod:of(indicative-23, flow-25)
+advmod(indicative-23, through-26)
+
+root(ROOT-0, depleted-14)
+nsubjpass(depleted-14, unverified-7)
+cc(unverified-7, and-8)
+det(withdrawals-11, the-9)
+compound(withdrawals-11, cash-10)
+nsubjpass(depleted-14, withdrawals-11)
+auxpass(depleted-14, were-12)
+advmod(depleted-14, rapidly-13)
+case(occasions-17, in-15)
+amod(occasions-17, separate-16)
+nmod:in(depleted-14, occasions-17)
+case(locations-21, at-18)
+amod(locations-21, different-19)
+compound(locations-21, branch-20)
+nmod:at(depleted-14, locations-21)
+dep(depleted-14, indicative-23)
+case(flow-25, of-24)
+nmod:of(indicative-23, flow-25)
+advmod(indicative-23, through-26)
+
+
+Sentence #22: Memo on the wires noted that they were for tuition purposes, however this may conflict with observed activity as the funds were withdrawn subsequently in cash.
+root(ROOT-0, noted-5)
+nsubj(noted-5, Memo-1)
+case(wires-4, on-2)
+det(wires-4, the-3)
+nmod:on(Memo-1, wires-4)
+mark(purposes-11, that-6)
+nsubj(purposes-11, they-7)
+cop(purposes-11, were-8)
+case(purposes-11, for-9)
+compound(purposes-11, tuition-10)
+ccomp(noted-5, purposes-11)
+punct(purposes-11, ,-12)
+advmod(conflict-16, however-13)
+nsubj(conflict-16, this-14)
+aux(conflict-16, may-15)
+dep(purposes-11, conflict-16)
+case(activity-19, with-17)
+amod(activity-19, observed-18)
+nmod:with(conflict-16, activity-19)
+mark(withdrawn-24, as-20)
+det(funds-22, the-21)
+nsubjpass(withdrawn-24, funds-22)
+auxpass(withdrawn-24, were-23)
+acl:as(activity-19, withdrawn-24)
+advmod(withdrawn-24, subsequently-25)
+case(cash-27, in-26)
+nmod:in(withdrawn-24, cash-27)
+punct(noted-5, .-28)
+
+------
+triple
+0.848177466883786	funds	were	withdrawn subsequently
+------
+triple
+0.848177466883786	funds	were withdrawn subsequently in	cash
+------
+triple
+0.848177466883786	funds	were	withdrawn
+------
+triple
+1.0	they	were for	tuition purposes
+------
+triple
+0.848177466883786	funds	were withdrawn in	cash
+root(ROOT-0, noted-5)
+nsubj(noted-5, Memo-1)
+case(wires-4, on-2)
+det(wires-4, the-3)
+nmod:on(Memo-1, wires-4)
+mark(purposes-11, that-6)
+nsubj(purposes-11, they-7)
+cop(purposes-11, were-8)
+case(purposes-11, for-9)
+compound(purposes-11, tuition-10)
+ccomp(noted-5, purposes-11)
+advmod(conflict-16, however-13)
+nsubj(conflict-16, this-14)
+aux(conflict-16, may-15)
+dep(purposes-11, conflict-16)
+case(activity-19, with-17)
+amod(activity-19, observed-18)
+nmod:with(conflict-16, activity-19)
+mark(withdrawn-24, as-20)
+det(funds-22, the-21)
+nsubjpass(withdrawn-24, funds-22)
+auxpass(withdrawn-24, were-23)
+acl:as(activity-19, withdrawn-24)
+advmod(withdrawn-24, subsequently-25)
+case(cash-27, in-26)
+nmod:in(withdrawn-24, cash-27)
+
+root(ROOT-0, purposes-11)
+nsubj(purposes-11, they-7)
+cop(purposes-11, were-8)
+case(purposes-11, for-9)
+compound(purposes-11, tuition-10)
+advmod(conflict-16, however-13)
+nsubj(conflict-16, this-14)
+aux(conflict-16, may-15)
+dep(purposes-11, conflict-16)
+case(activity-19, with-17)
+amod(activity-19, observed-18)
+nmod:with(conflict-16, activity-19)
+mark(withdrawn-24, as-20)
+det(funds-22, the-21)
+nsubjpass(withdrawn-24, funds-22)
+auxpass(withdrawn-24, were-23)
+acl:as(activity-19, withdrawn-24)
+advmod(withdrawn-24, subsequently-25)
+case(cash-27, in-26)
+nmod:in(withdrawn-24, cash-27)
+
+root(ROOT-0, withdrawn-24)
+mark(withdrawn-24, as-20)
+det(funds-22, the-21)
+nsubjpass(withdrawn-24, funds-22)
+auxpass(withdrawn-24, were-23)
+advmod(withdrawn-24, subsequently-25)
+case(cash-27, in-26)
+nmod:in(withdrawn-24, cash-27)
+
+
+Sentence #23: Ultimate destination of funds remains unknown.
+root(ROOT-0, remains-5)
+compound(destination-2, Ultimate-1)
+nsubj(remains-5, destination-2)
+case(funds-4, of-3)
+nmod:of(destination-2, funds-4)
+xcomp(remains-5, unknown-6)
+punct(remains-5, .-7)
+
+------
+triple
+1.0	Ultimate destination	remains	unknown
+root(ROOT-0, remains-5)
+compound(destination-2, Ultimate-1)
+nsubj(remains-5, destination-2)
+case(funds-4, of-3)
+nmod:of(destination-2, funds-4)
+xcomp(remains-5, unknown-6)
+
+root(ROOT-0, unknown-6)
+
+
+Sentence #24: As such, there are reasonable grounds to suspect the activity above as being potential commission of a money laundering related offence.
+root(ROOT-0, are-5)
+case(such-2, As-1)
+nmod:as(are-5, such-2)
+punct(are-5, ,-3)
+expl(are-5, there-4)
+amod(grounds-7, reasonable-6)
+nsubj(are-5, grounds-7)
+mark(suspect-9, to-8)
+acl:to(grounds-7, suspect-9)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+advmod(suspect-9, above-12)
+mark(commission-16, as-13)
+cop(commission-16, being-14)
+amod(commission-16, potential-15)
+advcl:as(above-12, commission-16)
+case(offence-22, of-17)
+det(offence-22, a-18)
+compound(offence-22, money-19)
+compound(offence-22, laundering-20)
+amod(offence-22, related-21)
+nmod:of(commission-16, offence-22)
+punct(are-5, .-23)
+
+------
+triple
+0.808091138291468	grounds	suspect above	activity
+------
+triple
+0.808091138291468	reasonable grounds	suspect	activity
+------
+triple
+0.808091138291468	grounds	suspect	activity
+------
+triple
+0.808091138291468	reasonable grounds	suspect above	activity
+root(ROOT-0, are-5)
+case(such-2, As-1)
+nmod:as(are-5, such-2)
+expl(are-5, there-4)
+amod(grounds-7, reasonable-6)
+nsubj(are-5, grounds-7)
+mark(suspect-9, to-8)
+acl:to(grounds-7, suspect-9)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+advmod(suspect-9, above-12)
+mark(commission-16, as-13)
+cop(commission-16, being-14)
+amod(commission-16, potential-15)
+advcl:as(above-12, commission-16)
+case(offence-22, of-17)
+det(offence-22, a-18)
+compound(offence-22, money-19)
+compound(offence-22, laundering-20)
+amod(offence-22, related-21)
+nmod:of(commission-16, offence-22)
+
+root(ROOT-0, suspect-9)
+amod(grounds-7, reasonable-6)
+nsubjpass(suspect-9, grounds-7)
+mark(suspect-9, to-8)
+det(activity-11, the-10)
+dobj(suspect-9, activity-11)
+advmod(suspect-9, above-12)
+mark(commission-16, as-13)
+cop(commission-16, being-14)
+amod(commission-16, potential-15)
+advcl:as(above-12, commission-16)
+case(offence-22, of-17)
+det(offence-22, a-18)
+compound(offence-22, money-19)
+compound(offence-22, laundering-20)
+amod(offence-22, related-21)
+nmod:of(commission-16, offence-22)

@@ -24,8 +24,15 @@ def index():
 def process_ner():
     if request.method == 'POST':
         choice = request.form['taskoption']
+        lang = request.form['langoption']
         rawtext = request.form['rawtext']
-        doc = nlp(rawtext)
+        if lang is not None:
+            if lang == 'fr':
+                doc = nlpFr(rawtext)
+            else:
+                doc = nlp(rawtext)    
+        else:
+            doc = nlp(rawtext)
         #displacy.serve(doc, style="ent")
         #displacy.serve(doc, style="dep")
         d = []

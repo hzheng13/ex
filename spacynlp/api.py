@@ -78,7 +78,6 @@ def get_all_entities_from_msg():
         else:
             doc = nlp(text)    
     else:
-        doc = nlp(text)        
         doc = nlp(text)  
     d = []
     for ent in doc.ents:

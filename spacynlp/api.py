@@ -8,6 +8,7 @@ from cgitb import text
 
 dataFile = 'data/data1.txt'
 nlp = spacy.load('en_core_web_lg')
+nlpFr = spacy.load('fr_core_news_md')
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -56,13 +57,21 @@ def process():
     return render_template("index.html", results=results, num_of_results = num_of_results)  
 
 """ 
-    Return jsonified entity list given text
+    Return jsonified entity list 
+    
+    given arguments 'text' and 'lang'
 """         
 @app.route('/api/ner', methods = ['GET']) 
 def get_all_entities_from_msg():
-    #text = request.args.get('text', '')
     text = request.args.get('text')
-    doc = nlp(text)
+    lang = request.args.get('lang')
+    if lang is not None:
+        if lang == 'fr':
+            doc = nlpFr(text)
+        else:
+            doc = nlp(text)    
+    else:
+        doc = nlp(text)        
     d = []
     for ent in doc.ents:
         d.append((ent.text, ent.label_))

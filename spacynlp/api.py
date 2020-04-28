@@ -5,26 +5,29 @@ from default_ner_example import DefaultNerEx
 import spacy
 from spacy import displacy
 from cgitb import text
+from flaskext.markdown import Markdown
 
 dataFile = 'data/data1.txt'
 nlp = spacy.load('en_core_web_lg')
 nlpFr = spacy.load('fr_core_news_md')
 
 app = Flask(__name__)
+Markdown(app)
 app.config["DEBUG"] = True
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0    
 
 @app.route('/')
 def index():
     return render_template("index.html")
 
-@app.route('/process', methods=["POST"])
-def process():
+@app.route('/process_ner', methods=["POST"])
+def process_ner():
     if request.method == 'POST':
         choice = request.form['taskoption']
         rawtext = request.form['rawtext']
         doc = nlp(rawtext)
+        #displacy.serve(doc, style="ent")
+        #displacy.serve(doc, style="dep")
         d = []
         for ent in doc.ents:
             d.append((ent.label_, ent.text))
@@ -53,6 +56,10 @@ def process():
         elif choice == 'cardinal':
             results = CARDINAL_named_entity
             num_of_results = len(results)
+        elif choice == 'default':    
+            html = displacy.render(doc, style='ent')
+            results = html
+            return render_template('results.html', rawtext=rawtext, results=results)
              
     return render_template("index.html", results=results, num_of_results = num_of_results)  
 
@@ -72,6 +79,7 @@ def get_all_entities_from_msg():
             doc = nlp(text)    
     else:
         doc = nlp(text)        
+        doc = nlp(text)  
     d = []
     for ent in doc.ents:
         d.append((ent.text, ent.label_))

@@ -10,15 +10,21 @@ import re
 
 class DefaultNerEx:
    def pattern_matcher(self,doc):
-      label = "GPE"
+      address_label = "GPE"
       address_pattern='\d+[\w\s]+(?:avenue|ave|road|rd|boulevard|blvd|street|st|drive|dr|court|ct|highway|hwy|square|sq|park|parkway|pkwy|circle|cir|trail|trl)[,*\w\s]+([a-z][0-9][a-z]\s*[0-9][a-z][0-9](,*\s*canada)*)'
       address_pattern_object   = re.compile(address_pattern, re.IGNORECASE)
+      date_label = "DATE"
+      date_pattern='(\d+(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|september|oct|october|nov|november|dec|december)\d+)'
+      date_pattern_object             = re.compile(date_pattern, re.IGNORECASE)
+      label_pattern_objects={address_label:address_pattern_object, date_label:date_pattern_object}
       spans = []
-      for match in re.finditer(address_pattern_object, doc.text):
-         start, end = match.span()
-         span = doc.char_span(start, end, label=label)
-         if span:  # Only add span if it's valid
-            spans.append(span)
+      for label in label_pattern_objects:
+         pattern_object = label_pattern_objects[label]
+         for match in re.finditer(pattern_object, doc.text):
+            start, end = match.span()
+            span = doc.char_span(start, end, label=label)
+            if span:  # Only add span if it's valid
+               spans.append(span)
       # Add spans to the doc.ents
       doc.ents = list(doc.ents) + spans
       return doc

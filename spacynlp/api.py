@@ -128,4 +128,21 @@ def get_entities_by_label():
            entity_list.append(dict(zip(keys,ent1)))
     return jsonify(entity_list)
 
+# A route to return all of the entries by input text from NER search.
+@app.route('/api/v1/resources/entities/all', methods=['POST'])
+def handle_message():
+    if request.headers['Content-Type'] == 'text/plain':
+        message=request.get_data().decode("utf-8")
+        lst=DefaultNerEx().ner_search_from_message(message)
+        keys=['entity_name', 'label']
+        entity_list = []
+        for ent in lst:
+           ent1=[]
+           ent1.append(str(ent[0]))
+           ent1.append(ent[1])
+           entity_list.append(dict(zip(keys,ent1)))
+
+        return jsonify(entity_list)
+    else:
+        return "415 Unsupported Media Type."
 app.run()

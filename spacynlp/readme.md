@@ -16,4 +16,5 @@ as following:
 2. python api.py
 3. go to url: 'http://localhost:5000/api/v1/resources/entities/all' to see the whole result of ner search
       or url: 'http://localhost:5000/api/v1/resources/entities?label=ORG' to see the partial result of ner search by label(category/type)
-
+      or go to postman or similar tool with POST method and text input as body using url: 'http://localhost:5000/api/v1/resources/entities/all'
+         notice: Content-Type should be "text/plain" in the header

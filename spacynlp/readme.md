@@ -16,4 +16,11 @@ as following:
 2. python api.py
 3. go to url: 'http://localhost:5000/api/v1/resources/entities/all' to see the whole result of ner search
       or url: 'http://localhost:5000/api/v1/resources/entities?label=ORG' to see the partial result of ner search by label(category/type)
+      
+You can also enter text input to view NER results
+To view visually, select 'default' option
+4. go to url: http://localhost:5000/ 
+
+To send Rest requests
+5. send request to localhost:5000/api/ner?text="YOUR TEXT" 
 

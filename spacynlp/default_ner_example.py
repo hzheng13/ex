@@ -9,14 +9,19 @@ from collections import defaultdict
 import re
 
 class DefaultNerEx:
-   def pattern_matcher(self,doc):
-      address_label = "GPE"
+   def __init__(self):
+      #address
+      self.address_label = "GPE"
       address_pattern='\d+[\w\s]+(?:avenue|ave|road|rd|boulevard|blvd|street|st|drive|dr|court|ct|highway|hwy|square|sq|park|parkway|pkwy|circle|cir|trail|trl)[,*\w\s]+([a-z][0-9][a-z]\s*[0-9][a-z][0-9](,*\s*canada)*)'
-      address_pattern_object   = re.compile(address_pattern, re.IGNORECASE)
-      date_label = "DATE"
+      self.address_pattern_object   = re.compile(address_pattern, re.IGNORECASE)
+      #date
+      self.date_label = "DATE"
       date_pattern='(\d+(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|september|oct|october|nov|november|dec|december)\d+)'
-      date_pattern_object             = re.compile(date_pattern, re.IGNORECASE)
-      label_pattern_objects={address_label:address_pattern_object, date_label:date_pattern_object}
+      self.date_pattern_object             = re.compile(date_pattern, re.IGNORECASE)
+             
+   def pattern_matcher(self,doc): 
+      label_pattern_objects={self.address_label:self.address_pattern_object, self.date_label:self.date_pattern_object}
+
       spans = []
       for label in label_pattern_objects:
          pattern_object = label_pattern_objects[label]
@@ -29,9 +34,14 @@ class DefaultNerEx:
       doc.ents = list(doc.ents) + spans
       return doc
   
-   def ner_search_from_message(self,message):
-      # Load English
-      nlp = spacy.load('en_core_web_lg')
+   def ner_search_from_message(self, message, lang): 
+      if lang is not None and lang == 'fr':
+         # Load French
+         nlp = spacy.load('fr_core_news_md')
+
+      else:
+         # Load English
+         nlp = spacy.load('en_core_web_lg')
 
       #beam search
       def _beam_search():
@@ -58,24 +68,30 @@ class DefaultNerEx:
       #custom search
       def _custom_search():
          #add the customized pipeline which cannot work together with default models somehow
-         nlp.add_pipe(DefaultNerEx().pattern_matcher, name="address_pattern_matcher", last=True)
+         nlp.add_pipe(DefaultNerEx().pattern_matcher, name="custom_pattern_matcher", last=True)
          with nlp.disable_pipes('ner','tagger', 'parser'):
              doc = nlp(message)
          entities=[]      
          [entities.append((ent.text, ent.label_, 1.0)) for ent in doc.ents]
          return entities
+     
+      if lang is not None and lang == 'fr':
+         # French. to do customize.
+         return _beam_search()
+      else:
+         # English
+         return _beam_search() + _custom_search()
 
-      return _beam_search() + _custom_search()
 
-   def ner_search(self,file):
+   def ner_search(self, file, lang):
       # Read whole documents
-      f=open(file, "r")
-      message =f.read()
-      return DefaultNerEx().ner_search_from_message(message)
+      with open(file,'r') as f:
+         message = f.read()
+      return self.ner_search_from_message(message, lang)
 
 if __name__ == '__main__':
    #execute the action
-   entities=DefaultNerEx().ner_search('data/data2.txt')
+   entities=DefaultNerEx().ner_search('data/data2.txt', 'en')
    
    print ('Entities and scores (detected with beam search)')
    # Find named entities with text, entity type, probability

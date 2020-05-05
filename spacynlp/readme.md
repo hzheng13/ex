@@ -14,10 +14,12 @@ I also create a simple prototype rest API (api.py) to test the functonality base
 as following:
 1. pip out flask library
 2. python api.py
-3. go to url: 'http://localhost:5000/api/v1/resources/entities/all' to see the whole result of ner search
-      or url: 'http://localhost:5000/api/v1/resources/entities?label=ORG' to see the partial result of ner search by label(category/type)
-      or go to postman or similar tool with POST method and text input as body using url: 'http://localhost:5000/api/v1/resources/entities/all'
-         notice: Content-Type should be "text/plain" in the header
+3. go to postman or similar tool with POST method and text input as body using urls:
+    'http://localhost:5000/api/v1/resources/entities/all' if text body is english
+    'http://localhost:5000/api/v1/resources/entities/all?lang=fr' if text body is french 
+    'http://localhost:5000/api/v1/resources/entities/all?label=DATE' if need to do a category search
+
+   notice: Content-Type should be "text/plain" in the header. By default url, it is english content. Otherwise, attach query parameter lang=fr to url for french content.
       
 You can also enter text input to view NER results
 To view visually, select 'default' option

@@ -7,7 +7,6 @@ from spacy import displacy
 from cgitb import text
 from flaskext.markdown import Markdown
 
-dataFile = 'data/data1.txt'
 nlp = spacy.load('en_core_web_lg')
 nlpFr = spacy.load('fr_core_news_md')
 
@@ -92,55 +91,25 @@ def get_all_entities_from_msg():
             
     return jsonify(d)
     
-           
-# A route to return all of the available entries from NER search.
-@app.route('/api/v1/resources/entities/all', methods=['GET'])
-def get_all_entities():
-    lst=DefaultNerEx().ner_search(dataFile)
-    keys=['entity_name', 'label']
-    entity_list = []
-    for ent in lst:
-           ent1=[]
-           ent1.append(str(ent[0]))
-           ent1.append(ent[1])
-           entity_list.append(dict(zip(keys,ent1)))
-           
-    return jsonify(entity_list)
 
-# A route to return all of the available entries from NER search.
-@app.route('/api/v1/resources/entities', methods=['GET'])
-def get_entities_by_label():
-    # Check if an label was provided as part of the URL.
-    # If label is provided, assign it to a variable.
-    # If no label is provided, display an error in the browser.
-    if 'label' in request.args:
-        label = str(request.args['label'])
-    else:
-        return "Error: No label field provided. Please specify an label."
-    lst=DefaultNerEx().ner_search(dataFile)
-    keys=['entity_name', 'label']
-    entity_list = []
-    for ent in lst:
-        if ent[1] == label.upper():
-           ent1=[]
-           ent1.append(str(ent[0]))
-           ent1.append(ent[1])
-           entity_list.append(dict(zip(keys,ent1)))
-    return jsonify(entity_list)
 
-# A route to return all of the entries by input text from NER search.
+# A route to return all or part of the entries by input text as body from NER search
+# with two optional query parameters: lang and label.
 @app.route('/api/v1/resources/entities/all', methods=['POST'])
 def handle_message():
     if request.headers['Content-Type'] == 'text/plain':
-        message=request.get_data().decode("utf-8")
-        lst=DefaultNerEx().ner_search_from_message(message)
-        keys=['entity_name', 'label']
+        lang = request.args.get('lang')
+        label = request.args.get('label')
+        message = request.get_data().decode("utf-8")
+        lst = DefaultNerEx().ner_search_from_message(message, lang)
+        keys = ['entity_name', 'label']
         entity_list = []
         for ent in lst:
-           ent1=[]
-           ent1.append(str(ent[0]))
-           ent1.append(ent[1])
-           entity_list.append(dict(zip(keys,ent1)))
+           if label is None or ent[1] == label.upper():
+              ent1 = []
+              ent1.append(str(ent[0]))
+              ent1.append(ent[1])
+              entity_list.append(dict(zip(keys,ent1)))
 
         return jsonify(entity_list)
     else:

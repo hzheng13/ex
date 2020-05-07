@@ -7,16 +7,16 @@ import spacy
 from pprint import pprint
 from collections import defaultdict
 import re
-
+ 
 class DefaultNerEx:
    def __init__(self):
       #address
       self.address_label = "GPE"
-      address_pattern='\d+[\w\s]+(?:avenue|ave|road|rd|boulevard|blvd|street|st|drive|dr|court|ct|highway|hwy|square|sq|park|parkway|pkwy|circle|cir|trail|trl)[,*\w\s]+([a-z][0-9][a-z]\s*[0-9][a-z][0-9](,*\s*canada)*)'
+      address_pattern='\d+[\w\s]+(?:avenue|ave|road|rd|boulevard|blvd|street|st|drive|dr|court|ct|highway|hwy|square|sq|park|parkway|pkwy|circle|cir|trail|trl)[,*\w\s]+([a-z][0-9][a-z]\s*[0-9][a-z][0-9](,*\s*canada)?)'
       self.address_pattern_object   = re.compile(address_pattern, re.IGNORECASE)
       #date
       self.date_label = "DATE"
-      date_pattern='(\d+(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|september|oct|october|nov|november|dec|december)\d+)'
+      date_pattern='\d+(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|september|oct|october|nov|november|dec|december)\d+'
       self.date_pattern_object             = re.compile(date_pattern, re.IGNORECASE)
              
    def pattern_matcher(self,doc): 
@@ -69,8 +69,12 @@ class DefaultNerEx:
       def _custom_search():
          #add the customized pipeline which cannot work together with default models somehow
          nlp.add_pipe(DefaultNerEx().pattern_matcher, name="custom_pattern_matcher", last=True)
+         
+         #insert one space in order to identify the special date following 'DOB:' if there
+         message1=re.sub('DOB:','DOB: ',message)
+         
          with nlp.disable_pipes('ner','tagger', 'parser'):
-             doc = nlp(message)
+             doc = nlp(message1)
          entities=[]      
          [entities.append((ent.text, ent.label_, 1.0)) for ent in doc.ents]
          return entities

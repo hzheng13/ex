@@ -1,5 +1,4 @@
 import unittest
-# This is the class we want to test. So, we need to import it
 from default_ner_example import DefaultNerEx as DefaultNerExClass
 
 #common features for other three classes
@@ -11,7 +10,7 @@ class CommonUnitTest(unittest.TestCase):
     def get_type(entity, entity_type):
         return entity[1] == entity_type
 
-#load first short message, catch entities, then test
+#load first short message, catch entities
 class DefaultNerData1Test(CommonUnitTest):
     expected_org_in_data1=['FinTRAC','Capital One Bank USA','Capital One', 'Capital One Bank','Walmart','Target','Quality Inn','Best Buy' ]
     expected_date_in_data1=['1/12/2017','3/15/2016','5/14/2016','5/12/2016','5/14/2016']
@@ -21,7 +20,7 @@ class DefaultNerData1Test(CommonUnitTest):
     @classmethod
     def setUpClass(cls):
         #fetch entities
-        cls.entities = DefaultNerExClass().ner_search('data/data1.txt')
+        cls.entities = DefaultNerExClass().ner_search('data/data1.txt','en')
 
     @classmethod
     def tearDownClass(cls):
@@ -59,17 +58,17 @@ class DefaultNerData1Test(CommonUnitTest):
         actual_percentage=len(lst)/len(self.expected_money_in_data1)
         self.assertEqual(actual_percentage,100/100)
         
-#load second intermediate message, catch entities, then test
+#load second intermediate message, catch entities
 class DefaultNerData2Test(CommonUnitTest):
     expected_person_in_data2=['Jong CHEN','Jong CHEN','Jong CHEN','John','Jackie CHEN']
     expected_org_in_data2=['FINTRAC','HBCA','HBCA','HBCA']
     expected_date_in_data2=['21Dec2016','09Dec2018','14Jul2009','24Jan1992']
-    expected_gpe_in_data2=['China','China','133 YOUNGE ST  Toronto ON M 0 G 7 V 8, Canada','18 STRANDHURST COURT Barrie ON L7F4L1, Canada' ] 
+    expected_gpe_in_data2=['China','China','133 YOUNGE ST  Toronto ON M0G 7V8, Canada','18 STRANDHURST COURT Barrie ON L7F4L1, Canada' ] 
 
     @classmethod
     def setUpClass(cls):
         #fetch entities
-        cls.entities = DefaultNerExClass().ner_search('data/data2.txt')
+        cls.entities = DefaultNerExClass().ner_search('data/data2.txt','en')
 
     @classmethod
     def tearDownClass(cls):
@@ -97,16 +96,16 @@ class DefaultNerData2Test(CommonUnitTest):
             
         lst=[value for value in self.expected_date_in_data2 if value in actual_date_list]
         actual_percentage=len(lst)/len(self.expected_date_in_data2)
-        self.assertEqual(actual_percentage,0/100)
+        self.assertEqual(actual_percentage,100/100)
         
     def test_ner_search_by_gpe(self):
         actual_gpe_list=[str(super(DefaultNerData2Test, self).get_text(entity)) for entity in self.entities if super(DefaultNerData2Test, self).get_type(entity,'GPE') ]
             
         lst=[value for value in self.expected_gpe_in_data2 if value in actual_gpe_list]
         actual_percentage=len(lst)/len(self.expected_gpe_in_data2)
-        self.assertEqual(actual_percentage,50/100)
+        self.assertEqual(actual_percentage,100/100)
 
-#load third longest message, catch entities, then test        
+#load third longest message, catch entities     
 class DefaultNerData3Test(CommonUnitTest): 
     expected_person_in_data3=['Min TZING','Sammy Sung']
     expected_org_in_data3=['Flamenco Realty','Amex Flamenco Realty']
@@ -117,7 +116,7 @@ class DefaultNerData3Test(CommonUnitTest):
     @classmethod
     def setUpClass(cls):
         #fetch entities
-        cls.entities = DefaultNerExClass().ner_search('data/data3.txt')
+        cls.entities = DefaultNerExClass().ner_search('data/data3.txt','en')
 
     @classmethod
     def tearDownClass(cls):

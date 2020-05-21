@@ -1,20 +1,17 @@
 [
+('The suspicious activity was \nconducted in Canada with Best Buy, Walmart, restaurants, Target, Quality Inn, and\nother brick and mortar merchants.\n', {
+'entities': [(54, 62, 'ORG'), (64, 71, 'ORG'), (86, 92, 'ORG'), (94, 105, 'ORG')]
+}),
+('The sample includes one (1) fraudulent charge.', {
+'entities': [(28, 45, 'CRIMINAL CHARGE')]
+}),
+('Capital One has identified an unknown suspect in this case based on the external fraud\ninvestigation team.', {
+'entities': [(0, 11, 'ORG'), (81, 86, 'CRIMINAL CHARGE')]
+}),
 ('Introduction:Internal Case #C92646759\nFinTRAC Reference Number: 348729667\n', {
 'entities': [(38, 45, 'ORG')]
 }),
 ('On 1/12/2017 Capital One Bank USA, NA (COBUSANA) detected patterns of activity on\ncredit card account number 1234567890123456 that is    indicative of Credit Card.\n', {
-'entities': [(3, 12, 'DATE'), (35, 37, 'GPE')]
-}),
-('Capital One has identified an unknown suspect in this case based on the external fraud\ninvestigation team.', {
-'entities': [(81, 86, 'CRIMINAL CHARGE')]
-}),
-('The suspicious activity was \nconducted in Canada with Walmart, restaurants, Target, Quality Inn, Best Buy and\nother brick and mortar merchants.\n', {
-'entities': [(54, 61, 'ORG'), (84, 95, 'ORG')]
-}),
-('Capital One has been unable to recover the total fraud loss.', {
-'entities': [(49, 54, 'CRIMINAL CHARGE')]
-}),
-('The sample includes one (1) fraudulent charge.', {
-'entities': [(28, 45, 'CRIMINAL CHARGE')]
+'entities': [(3, 12, 'DATE'), (13, 33, 'ORG'), (35, 37, 'ORG'), (39, 47, 'ORG'), (109, 125, 'CARDINAL'), (151, 162, 'ORG')]
 })
 ]

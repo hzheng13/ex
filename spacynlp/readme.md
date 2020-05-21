@@ -18,6 +18,11 @@ There are the following ways to run train ner script
       run TrainNerEx().ner_search('data/data1.txt')
 4. if create a new custom model from blank and then do a NER search
       run TrainNerEx().ner_search('data/data1.txt',is_train='y')
+5. if update an existing default model using Pseudo-rehearsal solution
+      run TrainNerEx().ner_search('data/data1.txt','en_core_web_lg','y',is_rehearsal='y')
+6. if update an existing custom model using Pseudo-rehearsal solution
+      run TrainNerEx().ner_search('data/data1.txt','custommodel','y',is_rehearsal='y')
+
 
 A prototype rest API (api.py) is also created to test the functonality based on default model
 as following:

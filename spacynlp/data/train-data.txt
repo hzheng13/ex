@@ -1,6 +1,6 @@
 [
 ('The suspicious activity was \nconducted in Canada with Best Buy, Walmart, restaurants, Target, Quality Inn, and\nother brick and mortar merchants.\n', {
-'entities': [(54, 62, 'ORG'), (64, 71, 'ORG'), (86, 92, 'ORG'), (94, 105, 'ORG')]
+'entities': [(42, 48, 'GPE'), (54, 62, 'ORG'), (64, 71, 'ORG'), (86, 92, 'ORG'), (94, 105, 'ORG')]
 }),
 ('The sample includes one (1) fraudulent charge.', {
 'entities': [(28, 45, 'CRIMINAL CHARGE')]
@@ -11,7 +11,13 @@
 ('Introduction:Internal Case #C92646759\nFinTRAC Reference Number: 348729667\n', {
 'entities': [(38, 45, 'ORG')]
 }),
+('All supporting documentation is\nmaintained by Capital One Bank (USA) N.A.\nIncluded in Section B of this report is a sampling of transactional activity totaling \n$30.03.', {
+'entities': [(46, 62, 'ORG'), (162, 167, 'MONEY')]
+}),
 ('On 1/12/2017 Capital One Bank USA, NA (COBUSANA) detected patterns of activity on\ncredit card account number 1234567890123456 that is    indicative of Credit Card.\n', {
-'entities': [(3, 12, 'DATE'), (13, 33, 'ORG'), (35, 37, 'ORG'), (39, 47, 'ORG'), (109, 125, 'CARDINAL'), (151, 162, 'ORG')]
+'entities': [(3, 12, 'DATE'), (13, 33, 'ORG'), (35, 37, 'GPE'), (39, 47, 'ORG'), (109, 125, 'CARDINAL'), (151, 162, 'ORG')]
+}),
+('As such, there are reasonable grounds to suspect the activity as \nbeing a money laundering offence.\n', {
+'entities': [(74, 90, 'CRIMINAL CHARGE')]
 })
 ]

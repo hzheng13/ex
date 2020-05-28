@@ -48,7 +48,7 @@ class DefaultNerEx:
          with nlp.disable_pipes('ner'):
               doc = nlp(message)
 
-         threshold = 0.2
+         threshold = 0.0#0.2
          (beams) = nlp.entity.beam_parse([ doc ], beam_width = 16, beam_density = 0.0001)
 
          entity_scores = defaultdict(float)
@@ -64,6 +64,16 @@ class DefaultNerEx:
              if ( score > threshold):
                 entities.append((doc[start:end], label, score))
          return entities
+     
+      #greedy search
+      def _greedy_search():
+         doc = nlp(message)
+
+         entities=[]
+         for entity in doc.ents:
+                entities.append((entity.text, entity.label_, 1.0))
+         return entities
+
 
       #custom search
       def _custom_search():
@@ -95,7 +105,7 @@ class DefaultNerEx:
 
 if __name__ == '__main__':
    #execute the action
-   entities=DefaultNerEx().ner_search('data/data2.txt', 'en')
+   entities=DefaultNerEx().ner_search('data/data1.txt', 'en')
    
    print ('Entities and scores (detected with beam search)')
    # Find named entities with text, entity type, probability
